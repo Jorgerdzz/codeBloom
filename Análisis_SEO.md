@@ -19,7 +19,7 @@ Tras una investigación acerca de las palabras clave de otros sitios web de de c
 
 - **Categorías/subcategorías de productos:**
     - **Géneros de películas**: Drama, Comedia, Terror, Ciencia Ficción, Documental, Animación
-    - **Eventos de cine**: Proyecciones especiales, Maratones de cine, Festivales de cine.
+    - **Eventos de cine**: Proyecciones especiales, Maratones de cine, Festivales de cine
     - **Cine clásico**: Clásicos restaurados, Obras maestras del cine
     - **Cine internacional**: Películas extranjeras, Cine europeo, Cine asiático
     - **Servicios**: Alquiler de salas, Talleres de cine, Conferencias sobre cine
