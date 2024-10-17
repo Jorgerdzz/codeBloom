@@ -25,14 +25,14 @@ Tras una investigación acerca de las palabras clave de otros sitios web de de c
     - **Servicios**: Alquiler de salas, Talleres de cine, Conferencias sobre cine
 
 - **En fotos:**
-    - El título de cada película, vinculado al cartel correspondiente
+    - El título de cada película, vinculado al cartel correspondiente.
 
 - **Enlaces:**
     - Redes sociales
-    - Enlaces a las fichas de IMDB de cada película
+    - Enlaces a las fichas de IMDB de cada película.
 
 - **En páginas resultantes de filtros:**
-    - Los títulos de las películas que se corresponden con el filtro utilizado (por ejemplo, buscando con el filtro 'Acción', aparecerán todas las películas de acción que están en la cartelera).
+    - Los títulos de las películas que se corresponden con el filtro utilizado (por ejemplo, buscando con el filtro 'Acción', enviará a una página que muestra todas las películas de acción que están en la cartelera). La página resultante utilizará los nombres de las películas como elementos de título principales.
 
 - **Palabras clave de la competencia:**
     - Cine
