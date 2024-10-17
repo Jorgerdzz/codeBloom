@@ -1,4 +1,4 @@
-## Análisis de la competencia
+## 1. Análisis de la competencia
 
 ### Tendencias
 
@@ -28,7 +28,7 @@ Los diseños de los sitios web dedicados a los cines suelen presentar estas cara
 - Se enfatizan los distintos tipos de servicio ofrecidos (*luxury*, prémium...)
 - Navegación por categorías (géneros, recomendaciones, lo más visto...)
 
-## Análisis de elementos de diseño
+## 2. Análisis de elementos de diseño
 
 ### Elementos visuales - Color
 
