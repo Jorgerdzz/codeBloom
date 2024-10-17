@@ -1,4 +1,4 @@
-## Primeros pasos
+## 1. Primeros pasos
 
 ### Idea de negocio y factor diferenciador
 
