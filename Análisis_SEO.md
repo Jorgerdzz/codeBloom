@@ -2,7 +2,7 @@
 
 Tras una investigación acerca de las palabras clave de otros sitios web de de cines, consideramos que las más relevantes, organizadas según la sección, son las siguientes:
 
-- **Textos y títulos:**
+- **Textos, títulos y menús:**
     - Cartelera
     - Estrenos
     - Comprar entradas
