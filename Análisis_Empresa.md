@@ -22,6 +22,6 @@ Observamos que nuestro factor diferenciador no existe en la gran mayoría de emp
     - Transparencia
     - Adaptabilidad
 - **Responsabilidad social corporativa:** de los 17 objetivos globales definidos por la Agenda 2030, los tres que mejor encajan en la labor de nuestra empresa son lo siguientes:
-    - **Educación de calidad:** instruimos a nuestros clientes para que tengan los conocimientos necesarios para ocuparse del mantenimiento de su sitio web.
+    - **Educación de calidad:** instruimos a nuestros clientes con el objetivo de que tengan los conocimientos necesarios para ocuparse del mantenimiento de su sitio web.
     - **Trabajo decente y crecimiento económico:** ofrecemos herramientas para que nuestros clientes sean productivos y dispongan de unos ingresos dignos.
     - **Reducción de las desigualdades:** con nuestros planes adaptados a las necesidades y recursos de los clientes, reducimos la desigualdad a la hora de acceder a servicios de desarrollo web.
