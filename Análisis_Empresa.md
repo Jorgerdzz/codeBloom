@@ -12,6 +12,16 @@ Tenemos dos tipos de competidores diferenciados: por un lado, están las empresa
 
 Observamos que nuestro factor diferenciador no existe en la gran mayoría de empresas competidoras. Esto se traduce en precios menos flexibles y en una reducción del número de clientes potenciales. Nuestro factor diferenciador busca, precisamente, solventar estas limitaciones y potenciar los vínculos con el cliente. De esta forma, compensamos la que, en los inicios, será nuestra principal debilidad: la falta de experiencia en el mercado.
 
-### Imagen corporativa
+### Imagen corporativa - Misión, visión, valores y responsabilidad social corporativa
 
-Pendiente.
+- **Misión:** ofrecer servicios e instrucción relacionados con el desarrollo web y hacerlos accesibles para todo el mundo.
+- **Visión:** convertirnos en uno de los principales referentes para aquellos que necesiten servicios web o quieran aprender sobre ellos.
+- **Valores:**
+    - Calidad
+    - Orientación al cliente
+    - Transparencia
+    - Adaptabilidad
+- **Responsabilidad social corporativa:** de los 17 objetivos globales definidos por la Agenda 2030, los tres que mejor encajan en la labor de nuestra empresa son lo siguientes:
+    - **Educación de calidad:** instruimos a nuestros clientes para que tengan los conocimientos necesarios para ocuparse del mantenimiento de su sitio web.
+    - **Trabajo decente y crecimiento económico:** ofrecemos herramientas para que nuestros clientes sean productivos y dispongan de unos ingresos dignos.
+    - **Reducción de las desigualdades:** con nuestros planes adaptados a las necesidades y recursos de los clientes, reducimos la desigualdad a la hora de acceder a servicios de desarrollo web.
