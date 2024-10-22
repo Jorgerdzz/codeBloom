@@ -30,6 +30,12 @@ Observamos que nuestro factor diferenciador no existe en la gran mayoría de emp
 - **Análisis externo:**
     - **Oportunidades:** sector en auge porque las empresas cada vez requieren una mayor digitalización de sus negocios. Al mismo tiempo, al tratarse de servicios digitales, podemos colaborar con clientes de todo el mundo y expandir nuestro portfolio.
     - **Amenazas:** mercado saturado y con constantes cambios tecnológicos. Plataformas como WordPress son una alternativa a nuestros servicios muy extendida y eficaz.
-- **Análsiis interno:**
+- **Análisis interno:**
     - **Fortalezas:** en un sector muy homogéneo, en el que es muy difícil diferenciarse de la competencia, nuestro factor diferenciador nos permite destacar. Además, hacemos especial hincapié en el trato con el cliente.
     - **Debilidades:** empresa pequeña con recursos limitados y con poca trayectoria en el sector (cartera de clientes reducida).
+
+### Matriz CAME
+- **Corregir debilidades:** ya que nuestra cartera de clientes será inicialmente reducida, les ofreceremos un servicio de la máxima calidad posible para conseguir dos objetivos. En primer lugar, construir un portfolio atractivo con el que podamos atraer a nuevos clientes. En segundo lugar, lograr la satisfacción de nuestros clientes para que ellos mismos nos recomienden.
+- **Afrontar amenazas:** nos mantendremos al día de las tendencias tecnológicas y ofreceremos servicios lo suficientemente personalizados como para cubrir necesidades que plataformas como WordPress no logran satisfacer.
+- **Mantener fortalezas:** haremos especial hincapié en nuestro factor diferenciador, que es nuestra mejor baza para destacar en el sector y llegar al *target* más amplio posible.
+- **Explotar oportunidades:** promocionaremos nuestros servicios destacando especialmente nuestro factor diferenciador, con la finalidad de aprovechar la enorme demanda que existe actualmente en lo relativo a servicios digitales.
