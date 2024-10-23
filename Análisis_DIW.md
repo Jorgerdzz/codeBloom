@@ -47,6 +47,6 @@ Enlazando con el uso del color, todos los diseños buscan hacer una representaci
 Aunque los diseños reflejan la tendencia moderna de utilizar grandes espacios en blanco, al mismo tiempo comprimen mucho el uso de algunas imágenes, como las de la cartelera. Los rótulos de las películas suelen estar pegados los unos a los otros, probablemente para poder mostrar la mayor cantidad posible de películas en un único vistazo.
 
 ## 3. Prototipos de *landing page*
-### Prototipos en papel
+### Bocetos 
 
 ### Prototipos digitales
