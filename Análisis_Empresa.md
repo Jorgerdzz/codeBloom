@@ -2,7 +2,7 @@
 
 ### Idea de negocio y factor diferenciador
 
-La idea de negocio es una empresa de desarrollo web. Nuestro factor diferenciador consiste en ofrecer un servicio que cubre dos necesidades de mercado muy amplias. Por un lado, ofrecemos un servicio de mantenimiento completo una vez acabada la web, para aquellos clientes que quieren desentenderse por completo del mantenimiento. Por el otro, ofrecemos cursos y talleres para instruir a los clientes para que puedan ser ellos los que se ocupen del futuro mantenimiento.  
+Somos una empresa de desarrollo web. Nuestro factor diferenciador consiste en ofrecer un servicio que cubre dos necesidades de mercado muy amplias. Por un lado, ofrecemos un servicio de mantenimiento completo una vez acabada la web, para aquellos clientes que quieren desentenderse por completo del mantenimiento. Por el otro, ofrecemos cursos y talleres para instruir a los clientes para que puedan ser ellos los que se ocupen del futuro mantenimiento.  
 
 ### Estudio de mercado y público al que se dirige
 
