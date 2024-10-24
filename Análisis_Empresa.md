@@ -6,7 +6,7 @@ La idea de negocio es una empresa de desarrollo web. Nuestro factor diferenciado
 
 ### Estudio de mercado y público al que se dirige
 
-El propio factor diferenciador busca abarcar dos necesidades contrapuestas, pero además ofrecemos planes y presupuestos adaptados a las necesidades de cada cliente. De esta manera, nos dirigimos a un *target*, dentro de lo razonable, lo más amplio posible.  
+El propio factor diferenciador busca abarcar (con una estrategia diferenciada por segmentos) dos necesidades contrapuestas, pero además ofrecemos planes y presupuestos adaptados a las necesidades de cada cliente. De esta manera, nos dirigimos a un *target*, dentro de lo razonable, lo más amplio posible, sin importar las características geográficas, demográficas o económicas. Cabe destacar especialmente que, desde el punto de vista geográfico, y dado que ofrecemos servicios digitales, llegamos potencialmente a clientes de todo el mundo. Aunque en un primer momento nuestra cartera tenderá a ser local, aspiramos a tener un alcance internacional.  
 
 Tenemos dos tipos de competidores diferenciados: por un lado, están las empresas como nosotros que se encargan de desarrollar aplicaciones web personalizadas para los clientes (competidores directos). Por el otro, existen sistemas como WordPress, que permiten al cliente crear su propio sitio web sin ayuda de una empresa externa (competidores indirectos).  
 
@@ -29,13 +29,13 @@ Observamos que nuestro factor diferenciador no existe en la gran mayoría de emp
 ### Análisis DAFO
 - **Análisis externo:**
     - **Oportunidades:** sector en auge porque las empresas cada vez requieren una mayor digitalización de sus negocios. Al mismo tiempo, al tratarse de servicios digitales, podemos colaborar con clientes de todo el mundo y expandir nuestro portfolio.
-    - **Amenazas:** mercado saturado y con constantes cambios tecnológicos. Plataformas como WordPress son una alternativa a nuestros servicios muy extendida y eficaz.
+    - **Amenazas:** mercado saturado y con constantes cambios tecnológicos. Plataformas como WordPress son una alternativa a nuestros servicios muy extendida y eficaz. Uso creciente de la inteligencia artificial.
 - **Análisis interno:**
     - **Fortalezas:** en un sector muy homogéneo, en el que es muy difícil diferenciarse de la competencia, nuestro factor diferenciador nos permite destacar. Además, hacemos especial hincapié en el trato con el cliente.
     - **Debilidades:** empresa pequeña con recursos limitados y con poca trayectoria en el sector (cartera de clientes reducida).
 
 ### Matriz CAME
 - **Corregir debilidades:** ya que nuestra cartera de clientes será inicialmente reducida, les ofreceremos un servicio de la máxima calidad posible para conseguir dos objetivos. En primer lugar, construir un portfolio atractivo con el que podamos atraer a nuevos clientes. En segundo lugar, lograr la satisfacción de nuestros clientes para que ellos mismos nos recomienden.
-- **Afrontar amenazas:** nos mantendremos al día de las tendencias tecnológicas y ofreceremos servicios lo suficientemente personalizados como para cubrir necesidades que plataformas como WordPress no logran satisfacer.
+- **Afrontar amenazas:** nos mantendremos al día de las tendencias tecnológicas y ofreceremos servicios lo suficientemente personalizados como para cubrir necesidades que las plataformas como WordPress o las herramientas que implementan inteligencia artificial no logran satisfacer.
 - **Mantener fortalezas:** haremos especial hincapié en nuestro factor diferenciador, que es nuestra mejor baza para destacar en el sector y llegar al *target* más amplio posible.
 - **Explotar oportunidades:** promocionaremos nuestros servicios destacando especialmente nuestro factor diferenciador, con la finalidad de aprovechar la enorme demanda que existe actualmente en lo relativo a servicios digitales.
