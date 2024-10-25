@@ -47,6 +47,26 @@ Enlazando con el uso del color, todos los diseños buscan hacer una representaci
 Aunque los diseños reflejan la tendencia moderna de utilizar grandes espacios en blanco, al mismo tiempo comprimen mucho el uso de algunas imágenes, como las de la cartelera. Los rótulos de las películas suelen estar pegados los unos a los otros, probablemente para poder mostrar la mayor cantidad posible de películas en un único vistazo.
 
 ## 3. Prototipos de *landing page*
-### Bocetos 
-!(images/landingMov-1.jpg)
-### Prototipos digitales
+
+Para diseñar nuestra *landing page*, primero creamos un par de bocetos a mano y luego los convertimos en prototipos digitales usando Wireframe. Finalmente, nos decantamos por la segunda opción, ya que nos parece más innovadora en comparación con los sitios web de la competencia.  
+
+### Primer boceto
+#### Escritorio
+![](images/bocetoEscr-2.jpg)
+#### Móvil
+![](images/bocetoMov-2.jpg)
+### Segundo boceto
+#### Escritorio
+![](images/bocetoEscr-1.jpg)
+#### Móvil
+![](images/bocetoMov-1.jpg)
+### Primer prototipo 
+#### Escritorio
+![](images/landingEscr-1.JPG)
+#### Móvil
+![](images/landingMov-2.jpg)
+### Segundo prototipo
+#### Escritorio
+![](images/landingEscr-2.JPG)
+#### Móvil
+![](images/landingMov-1.JPG)
