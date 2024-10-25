@@ -48,5 +48,5 @@ Aunque los diseños reflejan la tendencia moderna de utilizar grandes espacios e
 
 ## 3. Prototipos de *landing page*
 ### Bocetos 
-
+!(images/landingMov-1.jpg)
 ### Prototipos digitales
