@@ -32,19 +32,27 @@ Los diseños de los sitios web dedicados a los cines suelen presentar estas cara
 
 ### Elementos visuales - Color
 
-Aunque quizás cabría esperar que el color más predominante en los sitios web de los cines sería el negro (para simular el ambiente de una sala de cine), en realidad el más habitual es el blanco (combinado, eso sí, con algunos elementos oscuros, por lo general negros). Esto seguramente busca transmitir formalidad y elegancia.
+Aunque quizás cabría esperar que el color más predominante en los sitios web de los cines sería el negro (para simular el ambiente de una sala de cine), en realidad el más habitual es el blanco (combinado, eso sí, con algunos elementos oscuros). Esto seguramente busca transmitir formalidad y elegancia.  
+
+![](/images/diw_color.png)
 
 ### Elementos conceptuales - Plano
 
-La mayoría de los sitios webs de la competencia siguen la tendencia actual de hacer diseños sin volumen. A diferencia de lo que ocurría, en general, hace unos años, cuando los botones y los distintos elementos destacaban su relieve, los diseños suelen ser fundamentalmente planos.
+La mayoría de los sitios webs de la competencia siguen la tendencia actual de hacer diseños sin volumen. A diferencia de lo que ocurría, en general, hace unos años, cuando los botones y los distintos elementos destacaban su relieve, los diseños suelen ser fundamentalmente planos.  
+
+![](/images/diw_plano.png)
 
 ### Elementos prácticos - Representación
 
-Enlazando con el uso del color, todos los diseños buscan hacer una representación digital, tanto estética como funcionalmente, del local físico de un cine.
+A pesar de las múltiples diferencias entre unos y otros, en última instancia todos los diseños buscan hacer una representación digital, tanto estética como funcionalmente, del local físico de un cine.  
+
+![](/images/diw_representación.png)
 
 ### Elementos de redacción - Espacio
 
-Aunque los diseños reflejan la tendencia moderna de utilizar grandes espacios en blanco, al mismo tiempo comprimen mucho el uso de algunas imágenes, como las de la cartelera. Los rótulos de las películas suelen estar pegados los unos a los otros, probablemente para poder mostrar la mayor cantidad posible de películas en un único vistazo.
+Los diseños reflejan la tendencia moderna de utilizar grandes espacios en blanco. Y aunque algunos sitios comprimen el uso de las imágenes de la cartelera, presumiblemente para poder mostrar la mayor cantidad posible de películas en un único vistazo, otros no lo hacen. Esto implica que, a menudo, es necesario desplazarse mucho por la página para poder abarcarlo todo.  
+
+![](/images/diw_espacio.png)
 
 ## 3. Prototipos de *landing page*
 
