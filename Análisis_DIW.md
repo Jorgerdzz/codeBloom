@@ -70,11 +70,11 @@ Para diseñar nuestra *landing page*, primero creamos un par de bocetos a mano y
 ![](images/bocetoMov-1.jpg)
 ### Primer prototipo 
 #### Escritorio
-![](images/landingEscr-1.JPG)
+![](images/landingEscr-1.png)
 #### Móvil
-![](images/landingMov-2.jpg)
+![](images/landingMov-1.png)
 ### Segundo prototipo
 #### Escritorio
-![](images/landingEscr-2.JPG)
+![](images/landingEscr-2.png)
 #### Móvil
-![](images/landingMov-1.JPG)
+![](images/landingMov-2.png)
