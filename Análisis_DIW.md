@@ -38,7 +38,7 @@ Aunque quizás cabría esperar que el color más predominante en los sitios web 
 
 ### Elementos conceptuales - Plano
 
-La mayoría de los sitios webs de la competencia siguen la tendencia actual de hacer diseños sin volumen. A diferencia de lo que ocurría, en general, hace unos años, cuando los botones y los distintos elementos destacaban su relieve, los diseños suelen ser fundamentalmente planos.  
+La mayoría de los sitios web de la competencia siguen la tendencia actual de hacer diseños sin volumen. A diferencia de lo que ocurría, en general, hace unos años, cuando los botones y los distintos elementos destacaban su relieve, los diseños suelen ser fundamentalmente planos.  
 
 ![](/images/diw_plano.png)
 
