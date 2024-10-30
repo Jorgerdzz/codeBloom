@@ -77,4 +77,25 @@ Para diseñar nuestra *landing page*, primero creamos un par de bocetos a mano y
 #### Escritorio
 ![](images/landingEscr-2.png)
 #### Móvil
-![](images/landingMov-2.png)
+![](images/landingMov-2.png)  
+
+## 4. Paleta de colores
+
+La elección de los colores #0F0233 (un azul oscuro profundo), #FFFFFF (blanco) y #FFC8C8 (un rosa suave) para una web de cine es una combinación interesante que puede funcionar muy bien en este contexto por varias razones:
+
+**1. Profundidad y Dramaticidad (#0F0233):** Este azul oscuro casi púrpura crea una atmósfera de profundidad y misterio que se asocia fácilmente con la experiencia del cine. Este color evoca la sensación de una sala de cine a oscuras, justo antes de que empiece la película, lo que puede ayudar a los usuarios a entrar en el "mood" del cine desde el primer momento que visitan el sitio web. Además, los tonos oscuros funcionan bien en pantallas, ya que ayudan a reducir la fatiga visual, especialmente en entornos con poca luz, y ponen en primer plano el contenido.
+
+**2. Claridad y Legibilidad (#FFFFFF):**  El blanco es un color neutral y claro que complementa al azul oscuro al proporcionar un contraste fuerte. Este color es esencial para garantizar que los textos y otros elementos interactivos sean fácilmente visibles y legibles, especialmente si se colocan sobre el fondo oscuro. También aporta claridad y simplicidad al diseño, ayudando a que la navegación sea intuitiva y que el contenido de la página sea el foco principal.
+
+**3. Calidez y Emoción (#FFC8C8):** El rosa claro añade un toque de calidez y cercanía a la paleta, suavizando la atmósfera dramática del azul oscuro. Este color puede evocar emociones más ligeras y amistosas, ayudando a equilibrar el diseño y haciéndolo más atractivo y acogedor para una audiencia amplia. Además, el rosa claro es un color que puede asociarse a momentos emotivos, una parte importante de la experiencia cinematográfica. En términos visuales, ayuda a guiar la atención del usuario en elementos específicos, como botones de llamada a la acción o secciones destacadas de la web.
+
+**En Conjunto**
+
+Esta paleta no solo proporciona un equilibrio visual entre dramatismo, claridad y emoción, sino que también ayuda a evocar una experiencia cinematográfica al usuario. Los tres colores permiten que el diseño sea tanto envolvente como funcional, garantizando que los elementos clave de la web destaquen de forma adecuada. En conjunto, esta elección de colores crea una atmósfera atractiva y envolvente, haciendo que el visitante asocie inmediatamente la experiencia del sitio web con la del cine.
+
+![](/images/Paleta_Colores.png)
+
+
+
+
+
