@@ -30,4 +30,19 @@ body{
     background-color: #0f0233;
     color: white;
 }   
+#cartelera{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-column: 2%;
+    grid-row: 4%;
+}
+.peliculas{
+    display: block;
+    margin: 2em;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
 
