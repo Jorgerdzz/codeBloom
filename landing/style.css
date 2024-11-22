@@ -1,48 +1,157 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    box-sizing: border-box;
 }
-/* body{
-    display: flex;
-    flex-wrap: wrap;
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+
+body {
     background-color: #0f0233;
     color: white;
-} */
-/* 
-main{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    h2{
-        justify-content: center;
-        width: 100%;
-    }
-} */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 
-body{
+h1 {
+    font-family: "Bebas Neue";
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    background-color: #0f0233;
-    color: white;
-}   
-#cartelera{
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-column: 2%;
-    grid-row: 4%;
+    line-height: 5rem;
 }
-.peliculas{
-    display: block;
-    margin: 2em;
-    img {
-        width: 100%;
-        height: 100%;
+
+#carrusel {
+    position: relative;
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+
+    .imagenes {
+        display: flex;
+
+        img {
+            width: 100%;
+            height: 0;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        img.activo {
+            height: 100%;
+            opacity: 1;
+        }
+    }
+
+    button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 200, 200, 0.7);
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+        z-index: 10;
+    }
+
+    .anterior {
+        left: 10px;
+    }
+
+    .siguiente {
+        right: 10px;
+    }
+
+    .puntos {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        margin-top: 0;
+
+        .punto {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            cursor: pointer;
+
+        }
+
+        .punto.activo {
+            background-color: #ffc8c8;
+        }
+    }
+}
+
+#compra_rapida {
+    select {
+        font-size: 1.2rem;
+        width: 10rem;
+        border-radius: 5px;
+        background-color: white;
+    }
+
+    button {
+        font-size: 1.2rem;
+        background-color: #ffc8c8;
+        width: 10rem;
+        padding: 0.25rem;
+        border-radius: 5px;
+    }
+}
+
+#cartelera {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1rem;
+    width: 80%;
+    line-height: normal;
+
+    .cartel {
+        img {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
     }
 }
 
 
+@media (max-width: 600px) {
+    #carrusel {
+        width: 100%;
+    }
+
+    #compra_rapida {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5rem;
+
+        * {
+            margin-top: 0.5rem;
+        }
+    }
+
+    #cartelera {
+        grid-template-columns: auto auto;
+        width: 90%;
+    }
+}
