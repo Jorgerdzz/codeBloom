@@ -19,7 +19,7 @@ function mostrarImagen(indice) {
     activarPunto(indice);
 }
 
-/* La función que activa un punto de navegación concreto. La lógica es igual que en la anterior. */
+/* Activa un punto de navegación concreto. La lógica es igual que en la función anterior. */
 function activarPunto(indice) {
     puntos.forEach((punto, i) => {
         if (i === indice) {
@@ -34,7 +34,7 @@ function activarPunto(indice) {
 En primer lugar, se actualiza el índice sumándole o restándole la dirección (es decir, sumándole o restándole 1).
 En segundo lugar, se comprueba si el índice se sale del array de imágenes por alguno de los dos lados.
 De ser así, significa que hay que ajustarlo para que continúe desde el otro lado.
-Por último, se utiliza la función anterior para mostrar la imagen que corresponde al nuevo índice. */
+Por último, se utiliza la función mostrarImagen(), ya definida, para mostrar la imagen que corresponde al nuevo índice. */
 function desplazarCarrusel(direccion) {
     indiceCarrusel += direccion;
     if (indiceCarrusel < 0) {
@@ -48,7 +48,7 @@ function desplazarCarrusel(direccion) {
 let autoplay;
 
 /* Inicia o reinicia el autoplay del carrusel y lo programa para avanzar una imagen cada cinco segundos. 
-Se utiliza una variable global porque debe seguir siendo accesible al acabar la función si se quiere poder reiniciar más adelante el temporizador. */
+Se utiliza una variable global porque la referencia debe seguir siendo accesible al acabar la función si se quiere poder reiniciar más adelante el temporizador. */
 function iniciarAutoplay() {
     clearInterval(autoplay);
     autoplay = setInterval(() => {
@@ -56,20 +56,20 @@ function iniciarAutoplay() {
     }, 5000);
 }
 
-/* Se añade un event listener al botón de retroceder para que retroceda una imagen y reinicie el temporizador del autoplay.*/
+/* Se añade un event listener al botón de retroceder para que, al hacer clic sobre él, se muestre la imagen anterior y se reinicie el temporizador del autoplay.*/
 anterior.addEventListener("click", () => {
     desplazarCarrusel(-1);
     iniciarAutoplay();;
 });
 
-/* Se añade un event listener al botón de avanzar para que avance una imagen y reinicie el temporizador del autoplay.*/
+/* Se añade un event listener al botón de avanzar para que, al hacer clic sobre él, se muestre la imagen siguiente y se reinicie el temporizador del autoplay.*/
 siguiente.addEventListener("click", () => {
     desplazarCarrusel(1);
     iniciarAutoplay();
 });
 
 /* Se añade un event listener a todos los puntos de navegación para que, al hacer clic sobre cualquiera de ellos,
-actualicen el índice del carrusel y luego muestren la imagen correspondiente. Igual que con los botones, se reinicia el temporizador del autoplay. */
+se actualice el índice del carrusel y luego se muestre la imagen correspondiente. Igual que con los botones, se reinicia el temporizador del autoplay. */
 puntos.forEach((punto, i) => {
     punto.addEventListener("click", () => {
         indiceCarrusel = i;
