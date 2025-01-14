@@ -1,5 +1,5 @@
-<footer>Footer</footer>
-<script src="/views/bootstrap/js/bootstrap.bundle.min.js"></script>
+<footer></footer>
+<script src="views/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
