@@ -1,5 +1,5 @@
 <?php
-define('DOMAIN', 'http://localhost');
+define('DOMAIN', 'http://localhost:8000');
 define('SUBDIRECTORY', '');
 define('BASE_PATH', DOMAIN . SUBDIRECTORY);
 
