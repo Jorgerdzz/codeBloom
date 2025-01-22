@@ -10,6 +10,25 @@
     color: black;
 }
 
+.nav-tabs {
+border-color:#ffc8c8;
+}
+
+.nav-link,
+.nav-link:hover {
+    color: #ffc8c8;       
+}
+
+.nav-link:hover {
+    border-color:#ffc8c8 !important; 
+}
+
+.nav-item .active {
+    background-color: #ffc8c8 !important;
+    color: black !important;
+    border-color:#ffc8c8 !important;    
+}
+
 body {
     background-color: #0f0233;
     color: white;
@@ -23,14 +42,6 @@ a {
 a:hover {
     color: #ffc8c8 !important;
 }
-
-/* .nav-link {
-    color: white;
-}
-
-.nav-link:hover {
-    color: #ffc8c8;;
-} */
 
 h1 {
     font-family: "Bebas Neue";
