@@ -3,9 +3,33 @@
 }
 
 @font-face {
-    font-family: "Bebas Neue";
-    src: url(../fonts/BebasNeue-Regular.ttf);
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Italic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(../fonts/BebasNeue-Regular.ttf) format('truetype');
+}
+
+body {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+h1,
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
 
 .btn-primary,
 .btn-primary:hover {
@@ -45,10 +69,6 @@ a {
 
 a:hover {
     color: var(--custom-color) !important;
-}
-
-h1, h2 {
-    font-family: "Bebas Neue"; 
 }
 
 .cartelera {
