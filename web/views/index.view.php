@@ -2,7 +2,7 @@
 <?php require 'partials/nav.php'; ?>
 
 <main class="d-flex flex-column align-items-center text-align-center gap-3">
-    <h1>CLÁSICOS QUE PERDURAN,<br>ESTRENOS QUE SORPRENDEN</h1>
+    <h1>CLÁSICOS QUE PERDURAN, ESTRENOS QUE SORPRENDEN</h1>
 
     <div id="carousel" class="carousel slide carousel-fade col-lg-9 text-center" data-bs-ride="carousel">
         <div class=" carousel-indicators">
@@ -106,7 +106,6 @@
                 <a href="#"><img class="img-fluid" src="views/images/cartel8.webp" alt=""></a>
             </div>
         </div>
-
     </div>
 </main>
 

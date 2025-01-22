@@ -3,12 +3,12 @@
 
 <main>
     <div class="container">
-        <h2>Título película</h2>
-        <div class="row">
-            <div class="col-4">
+        <h1>Título película</h1>
+        <div class="row g-4 justify-content-center">
+            <div class="col-5 col-md-3">
                 <img src="views/images/cartel1.webp" alt="" class="img-fluid">
             </div>
-            <div class="col-8 col-md-3 order-md-2">
+            <div class="col-7 col-md-2 order-md-2">
                 <div>
                     <h5>DURACIÓN</h5>
                     <p>1h 58m</p>
@@ -17,8 +17,11 @@
                     <h5>FECHA DE ESTRENO</h5>
                     <p>20 diciembre 2024</p>
                 </div>
+                <div>
+                    <p>No recomendada para menores de 7 años</p>
+                </div>
             </div>
-            <div class="col-12 col-md-5 order-md-1">
+            <div class="col-12 col-md-6 order-md-1">
                 <div>
                     <h5>DIRECTORES</h5>
                     <p>Barry Jenkins </p>
@@ -36,8 +39,8 @@
                 </div>
             </div>
         </div>
-        <div class="row d-flex justify-content-center">
-            <div class="col-8">
+        <div class="row d-flex justify-content-center mt-3">
+            <div class="col-md-8">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>

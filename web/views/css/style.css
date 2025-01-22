@@ -47,10 +47,8 @@ a:hover {
     color: var(--custom-color) !important;
 }
 
-h1 {
-    font-family: "Bebas Neue";
-    font-size: 3rem;
-    text-align: center;
+h1, h2 {
+    font-family: "Bebas Neue"; 
 }
 
 .cartelera {
