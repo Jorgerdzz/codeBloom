@@ -1,3 +1,7 @@
+:root {
+    --custom-color: #ffc8c8;
+}
+
 @font-face {
     font-family: "Bebas Neue";
     src: url(../fonts/BebasNeue-Regular.ttf);
@@ -5,28 +9,28 @@
 
 .btn-primary,
 .btn-primary:hover {
-    background-color: #ffc8c8;
-    border-color: #ffc8c8;
+    background-color: var(--custom-color);
+    border-color: var(--custom-color);
     color: black;
 }
 
 .nav-tabs {
-border-color:#ffc8c8;
+    border-color: var(--custom-color);
 }
 
 .nav-link,
 .nav-link:hover {
-    color: #ffc8c8;       
+    color: var(--custom-color);
 }
 
 .nav-link:hover {
-    border-color:#ffc8c8 !important; 
+    border-color: var(--custom-color) !important;
 }
 
 .nav-item .active {
-    background-color: #ffc8c8 !important;
+    background-color: var(--custom-color) !important;
     color: black !important;
-    border-color:#ffc8c8 !important;    
+    border-color: var(--custom-color) !important;
 }
 
 body {
@@ -40,7 +44,7 @@ a {
 }
 
 a:hover {
-    color: #ffc8c8 !important;
+    color: var(--custom-color) !important;
 }
 
 h1 {
