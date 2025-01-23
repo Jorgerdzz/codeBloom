@@ -23,7 +23,7 @@
             </div>
             <div class="col-12 col-md-6 order-md-1">
                 <div>
-                    <h5>DIRECTORES</h5>
+                    <h5>DIRECCIÓN</h5>
                     <p>Barry Jenkins </p>
                 </div>
                 <div>
