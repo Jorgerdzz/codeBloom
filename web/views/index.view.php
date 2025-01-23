@@ -77,7 +77,7 @@
         </div>
     </form>
 
-    <h2 class="mt-4">CARTELERA</h2>
+    <h2 class="mt-4" id="cartelera">CARTELERA</h2>
 
     <div class="container cartelera">
         <div class="row g-3">
