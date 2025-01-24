@@ -26,16 +26,24 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Bebas Neue', sans-serif;
 }
 
-
 .btn-primary,
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-outline-primary:hover {
     background-color: var(--custom-color);
     border-color: var(--custom-color);
     color: black;
+}
+
+.btn-outline-primary {
+    border-color: var(--custom-color);
+    color: white;
 }
 
 .nav-tabs {
@@ -47,14 +55,9 @@ h2 {
     color: white;
 }
 
-.nav-link:hover {
-    border-color: var(--custom-color) !important;
-}
-
-.nav-item .active {
+.nav-link.active {
     background-color: var(--custom-color) !important;
     color: black !important;
-    border-color: var(--custom-color) !important;
 }
 
 body {
