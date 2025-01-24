@@ -44,7 +44,7 @@ h2 {
 
 .nav-link,
 .nav-link:hover {
-    color: var(--custom-color);
+    color: white;
 }
 
 .nav-link:hover {
