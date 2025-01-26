@@ -13,7 +13,7 @@
                 <a class="nav-link" href="<?= BASE_PATH . '/sobre-nosotros'; ?>">Sobre nosotros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?= BASE_PATH . '/inicio-sesion'; ?>">Inicia sesión</a>
+                <a class="nav-link" href="<?= BASE_PATH . '/iniciar-sesion'; ?>">Iniciar sesión</a>
             </li>
         </ul>
     </nav>

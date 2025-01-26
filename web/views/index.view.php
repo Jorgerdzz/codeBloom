@@ -1,7 +1,7 @@
 <?php require 'partials/head.php'; ?>
 <?php require 'partials/nav.php'; ?>
 
-<main class="d-flex flex-column align-items-center text-align-center gap-3">
+<main class="d-flex flex-column align-items-center gap-3">
     <h1>CLÁSICOS QUE PERDURAN, ESTRENOS QUE SORPRENDEN</h1>
 
     <div id="carousel" class="carousel slide carousel-fade col-lg-9 text-center" data-bs-ride="carousel">
@@ -38,7 +38,7 @@
     <form action="" method="post">
         <div class="row g-2">
             <div class="col">
-                <select name="pelicula" id="pelicula" class="form-select" aria-label="Default select example">
+                <select name="movie" id="movie" class="form-select" aria-label="select movie">
                     <option value="" disabled selected>Película</option>
                     <option value="">Película1</option>
                     <option value="">Película2</option>
@@ -53,7 +53,7 @@
                 </select>
             </div>
             <div class="col">
-                <select name="dia" id="dia" class="form-select" aria-label="Default select example">
+                <select name="day" id="day" class="form-select" aria-label="select day">
                     <option value="" disabled selected>Día</option>
                     <option value="">01/01/2025</option>
                     <option value="">02/01/2025</option>
@@ -63,7 +63,7 @@
                 </select>
             </div>
             <div class="col">
-                <select name="sesion" id="sesion" class="form-select" aria-label="Default select example">
+                <select name="session" id="session" class="form-select" aria-label="select session">
                     <option value="" disabled selected>Sesión</option>
                     <option value="">16:30</option>
                     <option value="">19:00</option>
