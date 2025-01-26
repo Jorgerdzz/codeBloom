@@ -1,7 +1,8 @@
 <?php
 return [
-    '/' => 'controllers/index.php',
+    '/' => 'controllers/home.php',
     '/pelicula' => 'controllers/pelicula.php',
     '/contacto' => 'controllers/contacto.php',
-    '/iniciar-sesion' => 'controllers/iniciar-sesion.php'
+    '/iniciar-sesion' => 'controllers/iniciar-sesion.php',
+    '/crear-cuenta' => 'controllers/crear-cuenta.php'
 ];
