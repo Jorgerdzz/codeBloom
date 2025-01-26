@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-
 function initSignUp() {
     const nameInput = document.getElementById("name");
     const lastNameInput = document.getElementById("last-name");
@@ -21,6 +20,11 @@ function initSignUp() {
     const passwordConfirmInput = document.getElementById("password-confirm");
     const signInButton = document.getElementById("signin");
 
+    const nameCheck = document.getElementById("name-check");
+    const lastNameCheck = document.getElementById("last-name-check");
+    const emailCheck = document.getElementById("email-check");
+    const passwordCheck = document.getElementById("password-check");
+    const passwordConfirmCheck = document.getElementById("password-confirm-check");
 
     let validName = false;
     let validLastName = false;
@@ -29,19 +33,23 @@ function initSignUp() {
     let validPasswordConfirm = false;
 
     nameInput.addEventListener("input", () => {
-        if (nameInput.value.length > 0) {
+        if (nameInput.value.length > 1) {
             validName = true;
+            nameCheck.classList.remove("d-none");
         } else {
             validName = false;
+            nameCheck.classList.add("d-none");
         }
         validateSignUpForm();
     });
 
     lastNameInput.addEventListener("input", () => {
-        if (lastNameInput.value.length > 0) {
+        if (lastNameInput.value.length > 1) {
             validLastName = true;
+            lastNameCheck.classList.remove("d-none");
         } else {
             validLastName = false;
+            lastNameCheck.classList.add("d-none");
         }
         validateSignUpForm();
     });
@@ -49,8 +57,10 @@ function initSignUp() {
     emailInput.addEventListener("input", () => {
         if (isValidEmail(emailInput.value)) {
             validEmail = true;
+            emailCheck.classList.remove("d-none");
         } else {
             validEmail = false;
+            emailCheck.classList.add("d-none");
         }
         validateSignUpForm();
     });
@@ -58,18 +68,18 @@ function initSignUp() {
     passwordInput.addEventListener("input", () => {
         if (passwordInput.value.length >= 8) {
             validPassword = true;
+            passwordCheck.classList.remove("d-none");
+            validatePasswordConfirm();
         } else {
             validPassword = false;
+            passwordCheck.classList.add("d-none");
+            validatePasswordConfirm();
         }
         validateSignUpForm();
     });
 
     passwordConfirmInput.addEventListener("input", () => {
-        if (passwordInput.value === passwordConfirmInput.value) {
-            validPasswordConfirm = true;
-        } else {
-            validPasswordConfirm = false;
-        }
+        validatePasswordConfirm();
         validateSignUpForm();
     });
 
@@ -80,9 +90,19 @@ function initSignUp() {
             signInButton.disabled = true;
         }
     }
-}
 
-function isValidEmail(email) {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return regex.test(email);
+    function validatePasswordConfirm() {
+        if (validPassword && passwordInput.value === passwordConfirmInput.value) {
+            validPasswordConfirm = true;
+            passwordConfirmCheck.classList.remove("d-none");
+        } else {
+            validPasswordConfirm = false;
+            passwordConfirmCheck.classList.add("d-none");
+        }
+    }
+
+    function isValidEmail(email) {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }
 }
