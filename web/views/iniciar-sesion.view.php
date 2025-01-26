@@ -16,10 +16,10 @@
             <input type="password" class="form-control" id="password">
           </div>
           <div class="d-grid">
-            <button class="btn btn-primary" type="button">Entrar</button>
+            <button class="btn btn-primary" type="button">Continuar</button>
           </div>
         </form>
-        <h4 class="text-center mt-5">¿Eres nuevo?</h4>
+        <h4 class="text-center mt-5">¿No te has registrado?</h4>
         <div class="d-grid">
           <a href="<?= BASE_PATH . '/crear-cuenta'; ?>" class="btn btn-outline-primary">Crea tu cuenta</a>
         </div>

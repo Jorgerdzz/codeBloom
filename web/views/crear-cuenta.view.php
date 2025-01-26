@@ -7,26 +7,35 @@
     <div class="row justify-content-center">
       <div class="col-10 col-md-4">
         <form>
-        <div class="mb-3">
+          <div class="mb-3">
             <label for="name" class="form-label">Nombre</label>
+            <i class="bi bi-check-lg d-none"></i>
             <input type="text" class="form-control" id="name">
           </div>
           <div class="mb-3">
-            <label for="lastname" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="lastname">
+            <label for="last-name" class="form-label">Apellido</label>
+            <i class="bi bi-check-lg d-none"></i>
+            <input type="text" class="form-control" id="last-name">
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Correo electrónico</label>
+            <i class="bi bi-check-lg d-none"></i>
             <input type="email" class="form-control" id="email">
           </div>
           <div class="mb-3">
             <label for="password" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="password">
+            <i class="bi bi-check-lg d-none"></i>
+            <input type="password" class="form-control" id="password" placeholder="Al menos ocho caracteres">
+          </div>
+          <div class="mb-3">
+            <label for="password-confirm" class="form-label">Confirma la contraseña</label>
+            <i class="bi bi-check-lg d-none"></i>
+            <input type="password" class="form-control" id="password-confirm">
           </div>
           <div class="d-grid">
-            <button class="btn btn-primary" type="button" disabled>Registrarse</button>
+            <button class="btn btn-primary" id="signin" type="button" disabled>Registrarse</button>
           </div>
-        </form>        
+        </form>
       </div>
     </div>
   </div>
