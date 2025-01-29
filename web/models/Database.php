@@ -24,11 +24,31 @@ class Database
         return $instance->query($query)->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public static function getUsers()
+    {
+        $instance = new self();
+        $query = "SELECT * FROM Usuarios";
+        return $instance->query($query)->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     public static function getMovie($id)
     {
         $instance = new self();
         $query = "SELECT * FROM Peliculas WHERE id = :id";
         $params = ['id' => $id];
         return $instance->query($query, $params)->fetch(PDO::FETCH_ASSOC);
+    }
+
+    public static function createUser($name, $lastname, $email, $password)
+    {
+        $instance = new self();
+        $query = "INSERT INTO Usuarios(nombre, apellido, correo, contrasena) VALUES (:name, :lastname, :email, :password)";
+        $params = [
+            'name' => $name,
+            'lastname' => $lastname,
+            'email' => $email,
+            'password' => password_hash($password, PASSWORD_DEFAULT)
+        ];
+        $instance->query($query, $params);
     }
 }
