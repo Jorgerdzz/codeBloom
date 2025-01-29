@@ -1,5 +1,5 @@
-<?php require 'partials/head.php'; ?>
-<?php require 'partials/nav.php'; ?>
+<?php require 'views/partials/head.php'; ?>
+<?php require 'views/partials/nav.php'; ?>
 
 <main class="d-flex flex-column align-items-center gap-3">
     <h1>CLÁSICOS QUE PERDURAN, ESTRENOS QUE SORPRENDEN</h1>
@@ -109,4 +109,4 @@
     </div>
 </main>
 
-<?php require 'partials/footer.php'; ?>
+<?php require 'views/partials/footer.php'; ?>
