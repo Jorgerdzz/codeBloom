@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 23-01-2025 a las 17:52:24
+-- Tiempo de generación: 29-01-2025 a las 19:17:20
 -- Versión del servidor: 10.11.8-MariaDB-0ubuntu0.24.04.1
 -- Versión de PHP: 8.3.6
 
@@ -20,19 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `cine`
 --
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `Clientes`
---
-
-CREATE TABLE `Clientes` (
-  `id` int(11) NOT NULL,
-  `nombre` varchar(50) NOT NULL,
-  `apellido` varchar(50) NOT NULL,
-  `correo` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -104,16 +91,23 @@ INSERT INTO `Salas` (`id`, `butacas`) VALUES
 (1, 200),
 (2, 200);
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `Usuarios`
+--
+
+CREATE TABLE `Usuarios` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(255) NOT NULL,
+  `apellido` varchar(255) NOT NULL,
+  `correo` varchar(255) NOT NULL,
+  `contrasena` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 --
 -- Índices para tablas volcadas
 --
-
---
--- Indices de la tabla `Clientes`
---
-ALTER TABLE `Clientes`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `clientes_correo_unique` (`correo`);
 
 --
 -- Indices de la tabla `Entradas`
@@ -144,14 +138,15 @@ ALTER TABLE `Salas`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- Indices de la tabla `Usuarios`
 --
+ALTER TABLE `Usuarios`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `clientes_correo_unique` (`correo`);
 
 --
--- AUTO_INCREMENT de la tabla `Clientes`
+-- AUTO_INCREMENT de las tablas volcadas
 --
-ALTER TABLE `Clientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `Entradas`
@@ -172,6 +167,12 @@ ALTER TABLE `Peliculas`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT de la tabla `Usuarios`
+--
+ALTER TABLE `Usuarios`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
 -- Restricciones para tablas volcadas
 --
 
@@ -179,7 +180,7 @@ ALTER TABLE `Peliculas`
 -- Filtros para la tabla `Entradas`
 --
 ALTER TABLE `Entradas`
-  ADD CONSTRAINT `Entradas_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `Clientes` (`id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `Entradas_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `Usuarios` (`id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `Entradas_ibfk_2` FOREIGN KEY (`id_pase`) REFERENCES `Pases` (`id`) ON UPDATE CASCADE;
 
 --
