@@ -11,6 +11,7 @@ function routeToController($uri, $routes)
         require $routes[$uri];
     } else {
         http_response_code(404);
+        $page = '404';
         require 'views/404.php';
     }
 }
