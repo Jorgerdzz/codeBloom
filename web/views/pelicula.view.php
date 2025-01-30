@@ -3,39 +3,36 @@
 
 <main>
     <div class="container">
-        <h1>Título película</h1>
+        <h1><?=$title;?></h1>
         <div class="row g-4 justify-content-center">
             <div class="col-5 col-md-2">
-                <img src="views/images/cartel1.webp" alt="" class="img-fluid">
+                <img src='<?=BASE_PATH . "/views/images/posters/{$id}.webp"; ?>' alt="" class="img-fluid">
             </div>
             <div class="col-7 col-md-2 order-md-2">
                 <div>
                     <h4>DURACIÓN</h4>
-                    <p>1h 58m</p>
+                    <p><?=$runningTime;?> minutos</p>
                 </div>
                 <div>
                     <h4>FECHA DE ESTRENO</h4>
-                    <p>20 diciembre 2024</p>
+                    <p><?=$releaseDate;?></p>
                 </div>
                 <div>
-                    <p>No recomendada para menores de 7 años</p>
+                    <p>No recomendada para menores de <?=$ageRating;?> años</p>
                 </div>
             </div>
             <div class="col-12 col-md-8 order-md-1">
                 <div>
                     <h4>DIRECCIÓN</h4>
-                    <p>Barry Jenkins </p>
+                    <p><?=$director;?></p>
                 </div>
                 <div>
                     <h4>ACTORES</h4>
-                    <p>Kelvin Harrison Jr., Mads Mikkelsen, Beyoncé Knowles-Carter, Keith David, Lennie James,
-                        agiso Lediga, Anika Noni Rose, Blue Ivy Carter, John Kani, Aaron Pierre, Thandiwe
-                        Newton, Tiffany Boone, Preston Nyman, Billy Eichner, Seth Rogen</p>
+                    <p><?=$cast;?></p>
                 </div>
                 <div>
                     <h4>SINOPSIS</h4>
-                    <p>Precuela de 'El rey león' (2019). Cuenta la historia de origen del padre de Simba,
-                        Mufasa, explorando su infancia al crecer con su hermano Scar.</p>
+                    <p><?=$summary;?></p>
                 </div>
                 <div class="row d-flex justify-content-center mb-3">
                     <h4>SESIONES</h4>
