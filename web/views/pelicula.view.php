@@ -3,36 +3,36 @@
 
 <main>
     <div class="container">
-        <h1><?=$title;?></h1>
+        <h1><?= $title; ?></h1>
         <div class="row g-4 justify-content-center">
             <div class="col-5 col-md-2">
-                <img src='<?=BASE_PATH . "/views/images/posters/{$id}.webp"; ?>' alt="" class="img-fluid">
+                <img src='<?= BASE_PATH . "/views/images/posters/{$id}.webp"; ?>' alt="" class="img-fluid">
             </div>
             <div class="col-7 col-md-2 order-md-2">
                 <div>
                     <h4>DURACIÓN</h4>
-                    <p><?=$runningTime;?> minutos</p>
+                    <p><?= $runningTime; ?> minutos</p>
                 </div>
                 <div>
                     <h4>FECHA DE ESTRENO</h4>
-                    <p><?=$releaseDate;?></p>
+                    <p><?= $releaseDate; ?></p>
                 </div>
                 <div>
-                    <p>No recomendada para menores de <?=$ageRating;?> años</p>
+                    <p><?= $ageRating; ?></p>
                 </div>
             </div>
             <div class="col-12 col-md-8 order-md-1">
                 <div>
                     <h4>DIRECCIÓN</h4>
-                    <p><?=$director;?></p>
+                    <p><?= $director; ?></p>
                 </div>
                 <div>
                     <h4>ACTORES</h4>
-                    <p><?=$cast;?></p>
+                    <p><?= $cast; ?></p>
                 </div>
                 <div>
                     <h4>SINOPSIS</h4>
-                    <p><?=$summary;?></p>
+                    <p><?= $summary; ?></p>
                 </div>
                 <div class="row d-flex justify-content-center mb-3">
                     <h4>SESIONES</h4>

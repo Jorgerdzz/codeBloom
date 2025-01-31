@@ -54,3 +54,12 @@ function formatDate($date)
 
     return "{$day} de {$month} de {$year}";
 }
+
+function formatAgeRating($ageRating)
+{
+    if ($ageRating === 0) {
+        return "Apta para todos los públicos";
+    } else {
+        return "No recomendada para menores de {$ageRating} años";
+    }
+}

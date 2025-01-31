@@ -27,6 +27,7 @@ $ageRating = $movie['calificacion_edad'];
 $summary = $movie['sinopsis'];
 
 $releaseDate = formatDate($releaseDate);
+$ageRating = formatAgeRating($ageRating);
 
 $page = 'pelicula';
 require 'views/pelicula.view.php';
