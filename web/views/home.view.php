@@ -2,7 +2,7 @@
 <?php require 'views/partials/nav.php'; ?>
 
 <main class="d-flex flex-column align-items-center gap-3">
-    <h1>CLÁSICOS QUE PERDURAN, ESTRENOS QUE SORPRENDEN</h1>
+    <h1 class="text-center">CLÁSICOS QUE PERDURAN, ESTRENOS QUE SORPRENDEN</h1>
 
     <div id="carousel" class="carousel slide carousel-fade col-lg-9 text-center" data-bs-ride="carousel">
         <div class=" carousel-indicators">
@@ -13,16 +13,16 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="<?=BASE_PATH . '/views/images/carousel/carousel1.webp'; ?>" class="d-block w-100" alt="...">
+                <img src="<?= BASE_PATH . '/views/images/carousel/carousel1.webp'; ?>" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="<?=BASE_PATH . '/views/images/carousel/carousel2.webp'; ?>" class="d-block w-100" alt="...">
+                <img src="<?= BASE_PATH . '/views/images/carousel/carousel2.webp'; ?>" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="<?=BASE_PATH . '/views/images/carousel/carousel3.webp'; ?>" class="d-block w-100" alt="...">
+                <img src="<?= BASE_PATH . '/views/images/carousel/carousel3.webp'; ?>" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="<?=BASE_PATH . '/views/images/carousel/carousel4.webp'; ?>" class="d-block w-100" alt="...">
+                <img src="<?= BASE_PATH . '/views/images/carousel/carousel4.webp'; ?>" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -82,28 +82,28 @@
     <div class="container cartelera">
         <div class="row g-3">
             <div class="col-6 col-md-3">
-                <a href="<?=BASE_PATH . '/pelicula?id=1'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/1.webp"'; ?>" alt=""></a>
+                <a href="<?= BASE_PATH . '/pelicula?id=1'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/1.webp"'; ?>" alt=""></a>
             </div>
             <div class="col-6 col-md-3">
-                <a href="#"><img class="img-fluid" src="<?=BASE_PATH . '/views/images/posters/2.webp'; ?>" alt=""></a>
+                <a href="#"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/2.webp'; ?>" alt=""></a>
             </div>
             <div class="col-6 col-md-3">
-                <a href="#"><img class="img-fluid" src="<?=BASE_PATH . '/views/images/posters/3.webp'; ?>" alt=""></a>
+                <a href="#"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/3.webp'; ?>" alt=""></a>
             </div>
             <div class="col-6 col-md-3">
-                <a href="#"><img class="img-fluid" src="<?=BASE_PATH . '/views/images/posters/4.webp'; ?>" alt=""></a>
+                <a href="#"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/4.webp'; ?>" alt=""></a>
             </div>
             <div class="col-6 col-md-3">
-                <a href="#"><img class="img-fluid" src="<?=BASE_PATH . '/views/images/posters/5.webp'; ?>" alt=""></a>
+                <a href="#"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/5.webp'; ?>" alt=""></a>
             </div>
             <div class="col-6 col-md-3">
-                <a href="#"><img class="img-fluid" src="<?=BASE_PATH . '/views/images/posters/6.webp'; ?>" alt=""></a>
+                <a href="#"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/6.webp'; ?>" alt=""></a>
             </div>
             <div class="col-6 col-md-3">
-                <a href="#"><img class="img-fluid" src="<?=BASE_PATH . '/views/images/posters/7.webp'; ?>" alt=""></a>
+                <a href="#"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/7.webp'; ?>" alt=""></a>
             </div>
             <div class="col-6 col-md-3">
-                <a href="#"><img class="img-fluid" src="<?=BASE_PATH . '/views/images/posters/8.webp'; ?>" alt=""></a>
+                <a href="#"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/8.webp'; ?>" alt=""></a>
             </div>
         </div>
     </div>
