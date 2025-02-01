@@ -17,6 +17,14 @@ class Database
         return $statement;
     }
 
+    public static function getMovie($id)
+    {
+        $instance = new self();
+        $query = "SELECT * FROM Peliculas WHERE id = :id";
+        $params = ['id' => $id];
+        return $instance->query($query, $params)->fetch(PDO::FETCH_ASSOC);
+    }
+
     public static function getMovies()
     {
         $instance = new self();
@@ -24,19 +32,20 @@ class Database
         return $instance->query($query)->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public static function getUser($email)
+    {
+        $instance = new self();
+        $query = "SELECT * FROM Usuarios WHERE correo = :email";
+        $params = ['email' => $email];
+        return $instance->query($query, $params)->fetch(PDO::FETCH_ASSOC);
+    }
+
+
     public static function getUsers()
     {
         $instance = new self();
         $query = "SELECT * FROM Usuarios";
         return $instance->query($query)->fetchAll(PDO::FETCH_ASSOC);
-    }
-
-    public static function getMovie($id)
-    {
-        $instance = new self();
-        $query = "SELECT * FROM Peliculas WHERE id = :id";
-        $params = ['id' => $id];
-        return $instance->query($query, $params)->fetch(PDO::FETCH_ASSOC);
     }
 
     public static function createUser($name, $lastname, $email, $password)

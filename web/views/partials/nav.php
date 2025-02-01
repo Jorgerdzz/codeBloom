@@ -11,7 +11,14 @@
                     <a class="nav-link" href="<?= BASE_PATH; ?>#cartelera">Cartelera</a>
                     <a class="nav-link" href="<?= BASE_PATH . '/contacto'; ?>">Contacto</a>
                     <a class="nav-link" href="<?= BASE_PATH . '/sobre-nosotros'; ?>">Sobre nosotros</a>
-                    <a class="nav-link" href="<?= BASE_PATH . '/iniciar-sesion'; ?>">Iniciar sesión</a>
+                    <?php
+                    if (!isset($_SESSION['currentUser'])) {
+                        echo '<a class="nav-link" href="' . BASE_PATH .  '/iniciar-sesion">Iniciar sesión</a>';
+                    } else {
+                        echo '<a class="nav-link" href="' . BASE_PATH .  '/cerrar-sesion">' .
+                            "Cerrar sesión ({$_SESSION['currentUser']['name']})</a>";
+                    }
+                    ?>
                 </div>
             </div>
         </div>
