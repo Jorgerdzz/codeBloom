@@ -48,7 +48,7 @@ function formatDate($date)
         12 => 'diciembre'
     ];
 
-    $day = $datetime->format('d');
+    $day = ltrim($datetime->format('d'), '0');
     $month = $months[(int)$datetime->format('m')];
     $year = $datetime->format('Y');
 
