@@ -35,6 +35,28 @@
         </button>
     </div>
 
+    <form action="<?= BASE_PATH . '/pelicula'; ?>" method="GET" class="my-3">
+        <div class="row g-2">
+            <div class="col">
+                <select name="id" id="movie" class="form-select" aria-label="select movie">
+                    <option value="" disabled selected>Película</option>
+                    <option value="1">Sonic 3 - La película</option>
+                    <option value="2">Psicosis</option>
+                    <option value="3">Red One</option>
+                    <option value="4">12 hombres sin piedad</option>
+                    <option value="5">Bitelchús Bitelchús</option>
+                    <option value="6">Un lugar en ninguna parte</option>
+                    <option value="7">Jurado Nº 2</option>
+                    <option value="8">Centauros del desierto</option>
+                </select>
+            </div>            
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary highlight">Comprar entradas</button>
+            </div>
+        </div>
+    </form>
+
+<!-- 
     <form action="" method="post">
         <div class="row g-2">
             <div class="col">
@@ -75,9 +97,9 @@
                 <button type="submit" class="btn btn-primary highlight">Comprar</button>
             </div>
         </div>
-    </form>
+    </form> -->
 
-    <h2 class="mt-4" id="cartelera">CARTELERA</h2>
+    <h2 class="" id="cartelera">CARTELERA</h2>
 
     <div class="container cartelera">
         <div class="row g-3">
@@ -85,25 +107,25 @@
                 <a href="<?= BASE_PATH . '/pelicula?id=1'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/1.webp"'; ?>" alt=""></a>
             </div>
             <div class="col-6 col-md-3">
-                <a href="#"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/2.webp'; ?>" alt=""></a>
+                <a href="<?= BASE_PATH . '/pelicula?id=2'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/2.webp'; ?>" alt=""></a>
             </div>
             <div class="col-6 col-md-3">
-                <a href="#"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/3.webp'; ?>" alt=""></a>
+                <a href="<?= BASE_PATH . '/pelicula?id=3'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/3.webp'; ?>" alt=""></a>
             </div>
             <div class="col-6 col-md-3">
-                <a href="#"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/4.webp'; ?>" alt=""></a>
+                <a href="<?= BASE_PATH . '/pelicula?id=4'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/4.webp'; ?>" alt=""></a>
             </div>
             <div class="col-6 col-md-3">
-                <a href="#"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/5.webp'; ?>" alt=""></a>
+                <a href="<?= BASE_PATH . '/pelicula?id=5'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/5.webp'; ?>" alt=""></a>
             </div>
             <div class="col-6 col-md-3">
-                <a href="#"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/6.webp'; ?>" alt=""></a>
+                <a href="<?= BASE_PATH . '/pelicula?id=6'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/6.webp'; ?>" alt=""></a>
             </div>
             <div class="col-6 col-md-3">
-                <a href="#"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/7.webp'; ?>" alt=""></a>
+                <a href="<?= BASE_PATH . '/pelicula?id=7'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/7.webp'; ?>" alt=""></a>
             </div>
             <div class="col-6 col-md-3">
-                <a href="#"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/8.webp'; ?>" alt=""></a>
+                <a href="<?= BASE_PATH . '/pelicula?id=8'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/8.webp'; ?>" alt=""></a>
             </div>
         </div>
     </div>
