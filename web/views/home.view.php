@@ -39,7 +39,6 @@
         <div class="row g-2">
             <div class="col">
                 <select name="id" id="movie" class="form-select" aria-label="select movie">
-                    <option value="" disabled selected>Película</option>
                     <option value="1">Sonic 3 - La película</option>
                     <option value="2">Psicosis</option>
                     <option value="3">Red One</option>
