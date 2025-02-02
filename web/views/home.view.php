@@ -49,55 +49,12 @@
                     <option value="7">Jurado Nº 2</option>
                     <option value="8">Centauros del desierto</option>
                 </select>
-            </div>            
+            </div>
             <div class="col-auto">
                 <button type="submit" class="btn btn-primary highlight">Comprar entradas</button>
             </div>
         </div>
     </form>
-
-<!-- 
-    <form action="" method="post">
-        <div class="row g-2">
-            <div class="col">
-                <select name="movie" id="movie" class="form-select" aria-label="select movie">
-                    <option value="" disabled selected>Película</option>
-                    <option value="">Película1</option>
-                    <option value="">Película2</option>
-                    <option value="">Película3</option>
-                    <option value="">Película4</option>
-                    <option value="">Película5</option>
-                    <option value="">Película6</option>
-                    <option value="">Película7</option>
-                    <option value="">Película8</option>
-                    <option value="">Película9</option>
-                    <option value="">Película10</option>
-                </select>
-            </div>
-            <div class="col">
-                <select name="day" id="day" class="form-select" aria-label="select day">
-                    <option value="" disabled selected>Día</option>
-                    <option value="">01/01/2025</option>
-                    <option value="">02/01/2025</option>
-                    <option value="">03/01/2025</option>
-                    <option value="">04/01/2025</option>
-                    <option value="">05/01/2025</option>
-                </select>
-            </div>
-            <div class="col">
-                <select name="session" id="session" class="form-select" aria-label="select session">
-                    <option value="" disabled selected>Sesión</option>
-                    <option value="">16:30</option>
-                    <option value="">19:00</option>
-                    <option value="">21:30</option>
-                    <option value="">00:30</option>
-                </select>
-            </div>
-            <div class="col-auto">
-                <button type="submit" class="btn btn-primary highlight">Comprar</button>
-            </div>
-        </div>
-    </form> -->
 
     <h2 class="" id="cartelera">CARTELERA</h2>
 
