@@ -14,7 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['currentUser'] = [
             'id' => $user['id'],
             'email' => $user['correo'],
-            'name' => $user['nombre']
+            'name' => $user['nombre'],
+            'lastName' => $user['apellido']
         ];
         header('Location: /');
         exit();
@@ -24,4 +25,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 $page = 'iniciar-sesion';
-require 'views/Sessions/iniciar-sesion.view.php';
+require 'views/Session/iniciar-sesion.view.php';

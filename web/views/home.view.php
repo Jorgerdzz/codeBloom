@@ -4,7 +4,7 @@
 <main>
     <div class="container">
         <h1 class="text-center">CLÁSICOS QUE PERDURAN, ESTRENOS QUE SORPRENDEN</h1>
-        <div id="carousel" class="carousel slide carousel-fade text-center" data-bs-ride="carousel">
+        <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class=" carousel-indicators">
                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -56,32 +56,30 @@
         </form>
 
         <h2 class="text-center" id="cartelera">CARTELERA</h2>
-        <div class="cartelera">
-            <div class="row g-3">
-                <div class="col-6 col-md-3">
-                    <a href="<?= BASE_PATH . '/pelicula?id=1'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/1.webp"'; ?>" alt=""></a>
-                </div>
-                <div class="col-6 col-md-3">
-                    <a href="<?= BASE_PATH . '/pelicula?id=2'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/2.webp'; ?>" alt=""></a>
-                </div>
-                <div class="col-6 col-md-3">
-                    <a href="<?= BASE_PATH . '/pelicula?id=3'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/3.webp'; ?>" alt=""></a>
-                </div>
-                <div class="col-6 col-md-3">
-                    <a href="<?= BASE_PATH . '/pelicula?id=4'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/4.webp'; ?>" alt=""></a>
-                </div>
-                <div class="col-6 col-md-3">
-                    <a href="<?= BASE_PATH . '/pelicula?id=5'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/5.webp'; ?>" alt=""></a>
-                </div>
-                <div class="col-6 col-md-3">
-                    <a href="<?= BASE_PATH . '/pelicula?id=6'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/6.webp'; ?>" alt=""></a>
-                </div>
-                <div class="col-6 col-md-3">
-                    <a href="<?= BASE_PATH . '/pelicula?id=7'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/7.webp'; ?>" alt=""></a>
-                </div>
-                <div class="col-6 col-md-3">
-                    <a href="<?= BASE_PATH . '/pelicula?id=8'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/8.webp'; ?>" alt=""></a>
-                </div>
+        <div class="row g-3 cartelera">
+            <div class="col-6 col-md-3">
+                <a href="<?= BASE_PATH . '/pelicula?id=1'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/1.webp"'; ?>" alt=""></a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="<?= BASE_PATH . '/pelicula?id=2'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/2.webp'; ?>" alt=""></a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="<?= BASE_PATH . '/pelicula?id=3'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/3.webp'; ?>" alt=""></a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="<?= BASE_PATH . '/pelicula?id=4'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/4.webp'; ?>" alt=""></a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="<?= BASE_PATH . '/pelicula?id=5'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/5.webp'; ?>" alt=""></a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="<?= BASE_PATH . '/pelicula?id=6'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/6.webp'; ?>" alt=""></a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="<?= BASE_PATH . '/pelicula?id=7'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/7.webp'; ?>" alt=""></a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="<?= BASE_PATH . '/pelicula?id=8'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/8.webp'; ?>" alt=""></a>
             </div>
         </div>
     </div>

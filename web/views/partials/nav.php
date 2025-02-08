@@ -15,8 +15,8 @@
                     if (!isset($_SESSION['currentUser'])) {
                         echo '<a class="nav-link" href="' . BASE_PATH .  '/iniciar-sesion">Iniciar sesión</a>';
                     } else {
-                        echo '<a class="nav-link" href="' . BASE_PATH .  '/cerrar-sesion">' .
-                            "Cerrar sesión ({$_SESSION['currentUser']['name']})</a>";
+                        echo '<a class="nav-link" href="' . BASE_PATH .  '/mi-cuenta">' .
+                            '<i class="bi bi-person-circle"></i>' . " {$_SESSION['currentUser']['name']}</a>";
                     }
                     ?>
                 </div>
