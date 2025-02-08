@@ -55,7 +55,7 @@
             </div>
         </form>
 
-        <h2 class="text-center" id="cartelera">CARTELERA</h2>
+        <h2 class="text-center" id="cartelera">Cartelera</h2>
         <div class="row g-3 cartelera">
             <div class="col-6 col-md-3">
                 <a href="<?= BASE_PATH . '/pelicula?id=1'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/1.webp"'; ?>" alt=""></a>

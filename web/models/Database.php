@@ -60,4 +60,25 @@ class Database
         ];
         $instance->query($query, $params);
     }
+
+    public static function updateUser($id, $name, $lastName, $email, $password)
+    {
+        $instance = new self();
+        $query = "UPDATE Usuarios SET nombre = :name, apellido = :lastname, correo = :email, contrasena = :password WHERE id = :id";
+        $params = [
+            'name' => $name,
+            'lastname' => $lastName,
+            'email' => $email,
+            'password' => password_hash($password, PASSWORD_DEFAULT),
+            'id' => $id
+        ];
+        $instance->query($query, $params);
+
+        $_SESSION['currentUser'] = [
+            'id' => $id,
+            'email' => $email,
+            'name' => $name,
+            'lastName' => $lastName
+        ];
+    }
 }
