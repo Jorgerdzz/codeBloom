@@ -118,15 +118,13 @@ function initEditAccount() {
     const emailCheck = document.getElementById("email-check");
     const newPasswordCheck = document.getElementById("new-password-check");
     const newPasswordConfirmCheck = document.getElementById("new-password-confirm-check");
-    const passwordCheck = document.getElementById("password-check");
-
+    
     let validName = true;
     let validLastName = true;
     let validEmail = true;
     let validNewPassword = true;
     let validNewPasswordConfirm = true;
-    let validPassword = false;
-
+    
     nameInput.addEventListener("input", () => {
         if (isValidName(nameInput.value)) {
             validName = true;
@@ -183,13 +181,6 @@ function initEditAccount() {
     });
 
     passwordInput.addEventListener("input", () => {
-        if (isValidPassword(passwordInput.value)) {
-            validPassword = true;
-            passwordCheck.classList.remove("d-none");
-        } else {
-            validPassword = false;
-            passwordCheck.classList.add("d-none");
-        }
         validateModifyForm();
     });
 
@@ -207,7 +198,7 @@ function initEditAccount() {
     }
 
     function validateModifyForm() {
-        if (validName && validLastName && validEmail && validNewPassword && validNewPasswordConfirm && validPassword) {
+        if (validName && validLastName && validEmail && validNewPassword && validNewPasswordConfirm && passwordInput.value.length > 0) {
             signInButton.disabled = false;
         } else {
             signInButton.disabled = true;

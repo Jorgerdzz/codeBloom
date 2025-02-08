@@ -29,13 +29,12 @@
                         <input type="password" class="form-control" id="new-password" name="new-password" placeholder="Al menos ocho caracteres">
                     </div>
                     <div class="mb-3">
-                        <label for="new-password-confirm" class="form-label">Confirma la contraseña</label>
+                        <label for="new-password-confirm" class="form-label">Confirma la nueva contraseña</label>
                         <i class="bi bi-check-lg d-none" id="new-password-confirm-check"></i>
                         <input type="password" class="form-control" id="new-password-confirm">
                     </div>
                     <div class="mb-3">
-                        <label for="password" class="form-label">Contraseña actual</label>
-                        <i class="bi bi-check-lg d-none" id="password-check"></i>
+                        <label for="password" class="form-label">Contraseña actual</label>                       
                         <input type="password" class="form-control" id="password" name="password">
                     </div>
                     <div class="d-grid">

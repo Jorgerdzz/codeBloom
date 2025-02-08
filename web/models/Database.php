@@ -32,14 +32,21 @@ class Database
         return $instance->query($query)->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public static function getUser($email)
+    public static function getUser($id)
+    {
+        $instance = new self();
+        $query = "SELECT * FROM Usuarios WHERE id = :id";
+        $params = ['id' => $id];
+        return $instance->query($query, $params)->fetch(PDO::FETCH_ASSOC);
+    }
+
+    public static function getUserByEmail($email)
     {
         $instance = new self();
         $query = "SELECT * FROM Usuarios WHERE correo = :email";
         $params = ['email' => $email];
         return $instance->query($query, $params)->fetch(PDO::FETCH_ASSOC);
     }
-
 
     public static function getUsers()
     {
@@ -72,13 +79,6 @@ class Database
             'password' => password_hash($password, PASSWORD_DEFAULT),
             'id' => $id
         ];
-        $instance->query($query, $params);
-
-        $_SESSION['currentUser'] = [
-            'id' => $id,
-            'email' => $email,
-            'name' => $name,
-            'lastName' => $lastName
-        ];
+        $instance->query($query, $params);      
     }
 }

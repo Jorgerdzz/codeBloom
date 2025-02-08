@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $user = Database::getUser($email);
+    $user = Database::getUserByEmail($email);
 
     if ($user && password_verify($password, $user['contrasena'])) {
         $_SESSION['currentUser'] = [
