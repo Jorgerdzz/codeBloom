@@ -4,7 +4,7 @@
 <main>
     <div class="container">
         <h1 class="text-center">Modificar datos</h1>
-        <?= $errorMessage ?? ''?>  
+        <?= $errorMessage ?? '' ?>
         <div class="row justify-content-center">
             <div class="col-10 col-md-4">
                 <form method="POST">
@@ -34,7 +34,7 @@
                         <input type="password" class="form-control" id="new-password-confirm">
                     </div>
                     <div class="mb-3">
-                        <label for="password" class="form-label">Contraseña actual</label>                       
+                        <label for="password" class="form-label">Contraseña actual</label>
                         <input type="password" class="form-control" id="password" name="password">
                     </div>
                     <div class="d-grid">

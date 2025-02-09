@@ -4,9 +4,10 @@
 <main>
   <div class="container">
     <h1 class="text-center">Crear cuenta</h1>
+    <?= $errorMessage ?? '' ?>
     <div class="row justify-content-center">
       <div class="col-10 col-md-4">
-        <form action="<?= BASE_PATH . '/registro'; ?>" method="POST">
+        <form method="POST">
           <div class="mb-3">
             <label for="name" class="form-label">Nombre</label>
             <i class="bi bi-check-lg d-none" id="name-check"></i>
