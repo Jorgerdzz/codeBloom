@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
             break;
         case "modificar-cuenta":
             initEditAccount();
+        case "eliminar-cuenta":
+            initDeleteAccount();
         default:
             break;
     }
@@ -118,13 +120,13 @@ function initEditAccount() {
     const emailCheck = document.getElementById("email-check");
     const newPasswordCheck = document.getElementById("new-password-check");
     const newPasswordConfirmCheck = document.getElementById("new-password-confirm-check");
-    
+
     let validName = true;
     let validLastName = true;
     let validEmail = true;
     let validNewPassword = true;
     let validNewPasswordConfirm = true;
-    
+
     nameInput.addEventListener("input", () => {
         if (isValidName(nameInput.value)) {
             validName = true;
@@ -202,6 +204,39 @@ function initEditAccount() {
             signInButton.disabled = false;
         } else {
             signInButton.disabled = true;
+        }
+    }
+}
+
+function initDeleteAccount() {
+    const passwordInput = document.getElementById("password");
+    const deleteConfirmInput = document.getElementById("delete-confirm");
+    const deleteButton = document.getElementById("delete");
+
+    const deleteConfirmCheck = document.getElementById("delete-confirm-check");
+
+    let validDeleteConfirm = false;
+
+    passwordInput.addEventListener("input", () => {
+        validateDeleteForm();
+    });
+
+    deleteConfirmInput.addEventListener("input", () => {
+        if (deleteConfirmInput.value.toLowerCase() === "eliminar") {
+            validDeleteConfirm = true;
+            deleteConfirmCheck.classList.remove("d-none");
+        } else {
+            validDeleteConfirm = false;
+            deleteConfirmCheck.classList.add("d-none");
+        }
+        validateDeleteForm();
+    })
+
+    function validateDeleteForm() {
+        if (passwordInput.value.length > 0 && validDeleteConfirm) {
+            deleteButton.disabled = false;
+        } else {
+            deleteButton.disabled = true;
         }
     }
 }

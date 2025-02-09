@@ -38,7 +38,7 @@
                         <input type="password" class="form-control" id="password" name="password">
                     </div>
                     <div class="d-grid">
-                        <button class="btn btn-primary" id="signin" type="submit" disabled>Actualizar</button>
+                        <button class="btn btn-primary" id="update" type="submit" disabled>Actualizar</button>
                     </div>
                 </form>
             </div>

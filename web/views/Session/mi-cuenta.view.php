@@ -11,7 +11,7 @@
         <div class="d-grid gap-2">
           <a class="btn btn-outline-primary" href="<?= BASE_PATH . '/mi-cuenta/modificar'; ?>">Modificar datos</a>
           <a class="btn btn-primary" href="<?= BASE_PATH . '/mi-cuenta/cerrar-sesion'; ?>">Cerrar sesión</a>
-          <a class="btn btn-danger">Eliminar cuenta</a>
+          <a class="btn btn-danger" href="<?= BASE_PATH . '/mi-cuenta/eliminar'; ?>">Eliminar cuenta</a>
         </div>
       </div>
     </div>
