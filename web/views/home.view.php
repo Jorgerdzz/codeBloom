@@ -13,16 +13,36 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="<?= BASE_PATH . '/views/images/carousel/carousel1.webp'; ?>" class="d-block w-100" alt="...">
+                    <a href="<?= BASE_PATH . '/pelicula?id=1'; ?>">
+                        <img src="<?= BASE_PATH . '/views/images/carousel/carousel1.webp'; ?>" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-block">
+                            <span class="h2 p-1">Sonic 3 - La película</span>
+                        </div>
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img src="<?= BASE_PATH . '/views/images/carousel/carousel2.webp'; ?>" class="d-block w-100" alt="...">
+                    <a href="<?= BASE_PATH . '/pelicula?id=2'; ?>">
+                        <img src="<?= BASE_PATH . '/views/images/carousel/carousel2.webp'; ?>" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-block">
+                            <span class="h2 p-1">Psicosis</span>
+                        </div>
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img src="<?= BASE_PATH . '/views/images/carousel/carousel3.webp'; ?>" class="d-block w-100" alt="...">
+                    <a href="<?= BASE_PATH . '/pelicula?id=3'; ?>">
+                        <img src="<?= BASE_PATH . '/views/images/carousel/carousel3.webp'; ?>" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-block">
+                            <span class="h2 p-1">Red One</span>
+                        </div>
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img src="<?= BASE_PATH . '/views/images/carousel/carousel4.webp'; ?>" class="d-block w-100" alt="...">
+                    <a href="<?= BASE_PATH . '/pelicula?id=3'; ?>">
+                        <img src="<?= BASE_PATH . '/views/images/carousel/carousel4.webp'; ?>" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-block">
+                            <span class="h2 p-1">Doce hombres sin piedad</span>
+                        </div>
+                    </a>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
