@@ -113,7 +113,7 @@ function initEditAccount() {
     const newPasswordInput = document.getElementById("new-password");
     const newPasswordConfirmInput = document.getElementById("new-password-confirm");
     const passwordInput = document.getElementById("password");
-    const signInButton = document.getElementById("signin");
+    const updateButton = document.getElementById("update");
 
     const nameCheck = document.getElementById("name-check");
     const lastNameCheck = document.getElementById("last-name-check");
@@ -135,7 +135,7 @@ function initEditAccount() {
             validName = false;
             nameCheck.classList.add("d-none");
         }
-        validateModifyForm();
+        validateEditForm();
     });
 
     lastNameInput.addEventListener("input", () => {
@@ -146,7 +146,7 @@ function initEditAccount() {
             validLastName = false;
             lastNameCheck.classList.add("d-none");
         }
-        validateModifyForm();
+        validateEditForm();
     });
 
     emailInput.addEventListener("input", () => {
@@ -157,7 +157,7 @@ function initEditAccount() {
             validEmail = false;
             emailCheck.classList.add("d-none");
         }
-        validateModifyForm();
+        validateEditForm();
     });
 
     newPasswordInput.addEventListener("input", () => {
@@ -174,16 +174,16 @@ function initEditAccount() {
             newPasswordCheck.classList.add("d-none");
             validateNewPasswordConfirm();
         }
-        validateModifyForm();
+        validateEditForm();
     });
 
     newPasswordConfirmInput.addEventListener("input", () => {
         validateNewPasswordConfirm();
-        validateModifyForm();
+        validateEditForm();
     });
 
     passwordInput.addEventListener("input", () => {
-        validateModifyForm();
+        validateEditForm();
     });
 
     function validateNewPasswordConfirm() {
@@ -199,11 +199,11 @@ function initEditAccount() {
         }
     }
 
-    function validateModifyForm() {
+    function validateEditForm() {
         if (validName && validLastName && validEmail && validNewPassword && validNewPasswordConfirm && passwordInput.value.length > 0) {
-            signInButton.disabled = false;
+            updateButton.disabled = false;
         } else {
-            signInButton.disabled = true;
+            updateButton.disabled = true;
         }
     }
 }

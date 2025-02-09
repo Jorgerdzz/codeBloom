@@ -34,7 +34,7 @@
                         <input type="password" class="form-control" id="new-password-confirm">
                     </div>
                     <div class="mb-3">
-                        <label for="password" class="form-label">Contraseña actual</label>
+                        <label for="password" class="form-label">Contraseña actual (obligatoria)</label>
                         <input type="password" class="form-control" id="password" name="password">
                     </div>
                     <div class="d-grid">
