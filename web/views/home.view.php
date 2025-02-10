@@ -37,7 +37,7 @@
                     </a>
                 </div>
                 <div class="carousel-item">
-                    <a href="<?= BASE_PATH . '/pelicula?id=3'; ?>">
+                    <a href="<?= BASE_PATH . '/pelicula?id=4'; ?>">
                         <img src="<?= BASE_PATH . '/views/images/carousel/carousel4.webp'; ?>" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-block">
                             <span class="h2 p-1">Doce hombres sin piedad</span>
