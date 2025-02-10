@@ -26,7 +26,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     $user = Database::getUser($id);
-    if (password_verify($password, $user['contrasena'])) {
+
+    if (userExists($email)) {
+        $errorMessage = '<p class="text-center text-danger">Ya existe un usuario con ese correo</p>';
+    } else if (!password_verify($password, $user['contrasena'])) {
+        $errorMessage = '<p class="text-center text-danger">La contraseña no es correcta</p>';
+    } else {
         Database::updateUser($id, $name, $lastName, $email, $newPassword);
         $_SESSION['currentUser'] = [
             'id' => $id,
@@ -36,8 +41,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ];
         header('Location: /mi-cuenta');
         exit();
-    } else {
-        $errorMessage = '<p class="text-center text-danger">La contraseña no es correcta</p>';
     }
 }
 
