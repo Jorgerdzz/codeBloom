@@ -9,5 +9,6 @@ return [
     '/mi-cuenta/eliminar' => 'controllers/Session/eliminar.php',
     '/mi-cuenta/cerrar-sesion' => 'controllers/Session/cerrar-sesion.php',
     '/crear-cuenta' => 'controllers/Registration/crear-cuenta.php',
-    '/bienvenida' => 'controllers/Registration/bienvenida.php'
+    '/bienvenida' => 'controllers/Registration/bienvenida.php',
+    '/cesta' => 'controllers/cesta.php',
 ];

@@ -48,10 +48,10 @@
                         </div>
                         <div class="tab-content mt-3 d-flex justify-content-center" id="myTabContent">
                             <div class="tab-pane fade show active" id="day1-pane" role="tabpanel" aria-labelledby="day1" tabindex="0">
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">16:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">18:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">20:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">22:00</button>
+                                <a href="<?= BASE_PATH . '/cesta'; ?>" type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2" data-id="1">16:30</a>
+                                <a href="<?= BASE_PATH . '/cesta'; ?>" type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2" data-id="2">18:30</a>
+                                <a href="<?= BASE_PATH . '/cesta'; ?>" type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2" data-id="3">20:30</a>
+                                <a href="<?= BASE_PATH . '/cesta'; ?>" type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2" data-id="4">22:30</a>
                             </div>
                             <div class="tab-pane fade" id="day2-pane" role="tabpanel" aria-labelledby="day2" tabindex="0">
                                 <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">16:00</button>
