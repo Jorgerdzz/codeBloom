@@ -44,9 +44,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-$name = $_SESSION['currentUser']['name'];
-$lastName = $_SESSION['currentUser']['lastName'];
-$email = $_SESSION['currentUser']['email'];
+$name = htmlspecialchars($_SESSION['currentUser']['name'], ENT_QUOTES);
+$lastName = htmlspecialchars($_SESSION['currentUser']['lastName'], ENT_QUOTES);
+$email = htmlspecialchars($_SESSION['currentUser']['email'], ENT_QUOTES);
 
 $page = 'modificar-cuenta';
 require 'views/Session/modificar.view.php';

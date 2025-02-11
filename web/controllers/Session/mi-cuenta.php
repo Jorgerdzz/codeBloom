@@ -5,8 +5,8 @@ if (!isset($_SESSION['currentUser'])) {
     exit();
 }
 
-$fullName = "{$_SESSION['currentUser']['name']} {$_SESSION['currentUser']['lastName']}";
-$email = $_SESSION['currentUser']['email'];
+$fullName = htmlspecialchars($_SESSION['currentUser']['name'] . " " . $_SESSION['currentUser']['lastName'], ENT_QUOTES);
+$email = htmlspecialchars($_SESSION['currentUser']['email'], ENT_QUOTES);
 
 $page = 'mi-cuenta';
 require 'views/Session/mi-cuenta.view.php';

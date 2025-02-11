@@ -13,7 +13,8 @@
                         echo '<a class="nav-link order-md-4" href="' . BASE_PATH .  '/iniciar-sesion"><i class="bi bi-person-circle"></i>&nbspIniciar sesión</a>';
                     } else {
                         echo '<a class="nav-link order-md-4" href="' . BASE_PATH .  '/mi-cuenta">' .
-                            '<i class="bi bi-person-circle"></i>' . " {$_SESSION['currentUser']['name']}</a>";
+                            '<i class="bi bi-person-circle"></i>' . " "
+                            . htmlspecialchars($_SESSION['currentUser']['name'], ENT_QUOTES) . '</a>';
                     }
                     ?>
                     <a class="nav-link order-md-5" href="<?= BASE_PATH . '/cesta'; ?>"><i class="bi bi-bag"></i>&nbsp;Cesta</a>
