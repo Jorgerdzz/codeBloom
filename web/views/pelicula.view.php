@@ -1,44 +1,41 @@
-<?php require 'partials/head.php'; ?>
-<?php require 'partials/nav.php'; ?>
+<?php require 'views/partials/head.php'; ?>
+<?php require 'views/partials/nav.php'; ?>
 
 <main>
     <div class="container">
-        <h1>Título película</h1>
+        <h1><?= $title; ?></h1>
         <div class="row g-4 justify-content-center">
             <div class="col-5 col-md-2">
-                <img src="views/images/cartel1.webp" alt="" class="img-fluid">
+                <img src='<?= BASE_PATH . "/views/images/posters/{$id}.webp"; ?>' alt="" class="img-fluid">
             </div>
             <div class="col-7 col-md-2 order-md-2">
                 <div>
-                    <h4>DURACIÓN</h4>
-                    <p>1h 58m</p>
+                    <h4>Duración</h4>
+                    <p><?= $runningTime; ?> minutos</p>
                 </div>
                 <div>
-                    <h4>FECHA DE ESTRENO</h4>
-                    <p>20 diciembre 2024</p>
+                    <h4>Fecha de estreno</h4>
+                    <p><?= $releaseDate; ?></p>
                 </div>
                 <div>
-                    <p>No recomendada para menores de 7 años</p>
+                    <p><?= $ageRating; ?></p>
                 </div>
             </div>
             <div class="col-12 col-md-8 order-md-1">
                 <div>
-                    <h4>DIRECCIÓN</h4>
-                    <p>Barry Jenkins </p>
+                    <h4>Dirección</h4>
+                    <p><?= $director; ?></p>
                 </div>
                 <div>
-                    <h4>ACTORES</h4>
-                    <p>Kelvin Harrison Jr., Mads Mikkelsen, Beyoncé Knowles-Carter, Keith David, Lennie James,
-                        agiso Lediga, Anika Noni Rose, Blue Ivy Carter, John Kani, Aaron Pierre, Thandiwe
-                        Newton, Tiffany Boone, Preston Nyman, Billy Eichner, Seth Rogen</p>
+                    <h4>Actores</h4>
+                    <p><?= $cast; ?></p>
                 </div>
                 <div>
-                    <h4>SINOPSIS</h4>
-                    <p>Precuela de 'El rey león' (2019). Cuenta la historia de origen del padre de Simba,
-                        Mufasa, explorando su infancia al crecer con su hermano Scar.</p>
+                    <h4>Sinopsis</h4>
+                    <p><?= $summary; ?></p>
                 </div>
                 <div class="row d-flex justify-content-center mb-3">
-                    <h4>SESIONES</h4>
+                    <h4>Sesiones</h4>
                     <div>
                         <div class="nav nav-pills justify-content-between" id="myTab" role="tablist">
                             <button class="nav-link active" id="day1" data-bs-toggle="tab" data-bs-target="#day1-pane" type="button" role="tab" aria-controls="day1-pane" aria-selected="true">20/01/2025</button>
@@ -100,4 +97,4 @@
     </div>
 </main>
 
-<?php require 'partials/footer.php'; ?>
+<?php require 'views/partials/footer.php'; ?>
