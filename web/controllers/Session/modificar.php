@@ -17,6 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
     $newPassword = (empty($_POST['new-password'])) ? $password : $_POST['new-password'];
+    $emailWasModified = $_SESSION['currentUser']['email'] !== $email;    
 
     if (!validCredentials($name, $lastName, $email, $newPassword)) {
         var_dump($_POST);
@@ -27,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $user = Database::getUser($id);
 
-    if (userExists($email)) {
+    if ($emailWasModified && userExists($email)) {
         $errorMessage = '<p class="text-center text-danger">Ya existe un usuario con ese correo</p>';
     } else if (!password_verify($password, $user['contrasena'])) {
         $errorMessage = '<p class="text-center text-danger">La contraseña no es correcta</p>';
