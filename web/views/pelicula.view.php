@@ -37,7 +37,7 @@
                 <div class="row d-flex justify-content-center mb-3">
                     <h4>Sesiones</h4>
                     <div>
-                        <div class="nav nav-pills justify-content-between" id="myTab" role="tablist">
+                        <div class="nav nav-pills justify-content-between" id="days" role="tablist">
                             <button class="nav-link active" id="day1" data-bs-toggle="tab" data-bs-target="#day1-pane" type="button" role="tab" aria-controls="day1-pane" aria-selected="true">20/01/2025</button>
                             <button class="nav-link" id="day2" data-bs-toggle="tab" data-bs-target="#day2-pane" type="button" role="tab" aria-controls="day2-pane" aria-selected="false">21/01/2025</button>
                             <button class="nav-link" id="day3" data-bs-toggle="tab" data-bs-target="#day3-pane" type="button" role="tab" aria-controls="day3-pane" aria-selected="false">22/01/2025</button>
@@ -46,12 +46,12 @@
                             <button class="nav-link" id="day6" data-bs-toggle="tab" data-bs-target="#day6-pane" type="button" role="tab" aria-controls="day6-pane" aria-selected="false">25/01/2025</button>
                             <button class="nav-link" id="day7" data-bs-toggle="tab" data-bs-target="#day7-pane" type="button" role="tab" aria-controls="day7-pane" aria-selected="false">26/01/2025</button>
                         </div>
-                        <div class="tab-content mt-3 d-flex justify-content-center" id="myTabContent">
-                            <div class="tab-pane fade show active" id="day1-pane" role="tabpanel" aria-labelledby="day1" tabindex="0">
-                                <a href="<?= BASE_PATH . '/cesta'; ?>" type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2" data-id="1">16:30</a>
-                                <a href="<?= BASE_PATH . '/cesta'; ?>" type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2" data-id="2">18:30</a>
-                                <a href="<?= BASE_PATH . '/cesta'; ?>" type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2" data-id="3">20:30</a>
-                                <a href="<?= BASE_PATH . '/cesta'; ?>" type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2" data-id="4">22:30</a>
+                        <div class="tab-content mt-3 d-flex justify-content-center" id="screenings">
+                            <div class="tab-pane fade show active" id="day1-pane" role="tabpanel" aria-labelledby="day1" tabindex="0" data-day="20/01/2025">
+                                <a href="<?= BASE_PATH . '/cesta'; ?>" type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2" data-id="1" data-price="7">16:30</a>
+                                <a href="<?= BASE_PATH . '/cesta'; ?>" type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2" data-id="2" data-price="8">18:30</a>
+                                <a href="<?= BASE_PATH . '/cesta'; ?>" type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2" data-id="3" data-price="8">20:30</a>
+                                <a href="<?= BASE_PATH . '/cesta'; ?>" type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2" data-id="4" data-price="8">22:30</a>
                             </div>
                             <div class="tab-pane fade" id="day2-pane" role="tabpanel" aria-labelledby="day2" tabindex="0">
                                 <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">16:00</button>
