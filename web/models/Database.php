@@ -34,8 +34,9 @@ class Database
 
         $currentDate = '2025-01-20 15:30:00';
 
-        $query = "SELECT DISTINCT id_pelicula FROM Pases WHERE CONCAT(fecha, ' ', hora ) >= :currentDate
+        $query = "SELECT DISTINCT id_pelicula, titulo FROM Pases, Peliculas WHERE CONCAT(fecha, ' ', hora ) >= :currentDate
          AND CONCAT(fecha, ' ', hora ) <= DATE_ADD(DATE_ADD(:currentDate, INTERVAL 7 DAY), INTERVAL 12 HOUR)
+         AND Pases.id_pelicula = Peliculas.id
          ORDER BY id_sala;";
         $params = [
             'currentDate' => $currentDate

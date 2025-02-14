@@ -59,14 +59,9 @@
             <div class="row g-2 justify-content-center">
                 <div class="col-auto">
                     <select name="id" id="movie" class="form-select" aria-label="select movie">
-                        <option value="1">Sonic 3 - La película</option>
-                        <option value="2">Psicosis</option>
-                        <option value="3">Red One</option>
-                        <option value="4">12 hombres sin piedad</option>
-                        <option value="5">Bitelchús Bitelchús</option>
-                        <option value="6">Un lugar en ninguna parte</option>
-                        <option value="7">Jurado Nº 2</option>
-                        <option value="8">Centauros del desierto</option>
+                        <?php foreach ($availableMovies as $movie): ?>
+                            <option value='<?= $movie['id_pelicula'] ?>'><?= $movie['titulo'] ?></option>
+                        <?php endforeach; ?>
                     </select>
                 </div>
                 <div class="col-auto">
@@ -76,31 +71,14 @@
         </form>
 
         <h2 class="text-center" id="cartelera">Cartelera</h2>
-        <div class="row g-3 cartelera">
-            <div class="col-6 col-md-3">
-                <a href="<?= BASE_PATH . '/pelicula?id=1'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/1.webp"'; ?>" alt=""></a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="<?= BASE_PATH . '/pelicula?id=2'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/2.webp'; ?>" alt=""></a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="<?= BASE_PATH . '/pelicula?id=3'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/3.webp'; ?>" alt=""></a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="<?= BASE_PATH . '/pelicula?id=4'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/4.webp'; ?>" alt=""></a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="<?= BASE_PATH . '/pelicula?id=5'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/5.webp'; ?>" alt=""></a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="<?= BASE_PATH . '/pelicula?id=6'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/6.webp'; ?>" alt=""></a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="<?= BASE_PATH . '/pelicula?id=7'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/7.webp'; ?>" alt=""></a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="<?= BASE_PATH . '/pelicula?id=8'; ?>"><img class="img-fluid" src="<?= BASE_PATH . '/views/images/posters/8.webp'; ?>" alt=""></a>
-            </div>
+        <div class="row g-3 cartelera justify-content-center">
+            <?php foreach ($availableMovies as $movie): ?>
+                <div class='col-6 col-md-3'>
+                    <a href='<?= BASE_PATH ?>/pelicula?id=<?= $movie['id_pelicula'] ?>'>
+                        <img class='img-fluid' src='<?= BASE_PATH ?>/views/images/posters/<?= $movie['id_pelicula'] ?>.webp' alt=''>
+                    </a>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </main>
