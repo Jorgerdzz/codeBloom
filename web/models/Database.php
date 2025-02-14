@@ -25,11 +25,22 @@ class Database
         return $instance->query($query, $params)->fetch(PDO::FETCH_ASSOC);
     }
 
-    public static function getMovies()
+    public static function getAvailableMovies()
     {
         $instance = new self();
-        $query = "SELECT * FROM Peliculas;";
-        return $instance->query($query)->fetchAll(PDO::FETCH_ASSOC);
+        // $currentTime = date('H:i:s');
+        // $currentDay = date('Y-m-d');
+        // $currentDate = date('Y-m-d H:i:s');
+
+        $currentDate = '2025-01-20 15:30:00';
+
+        $query = "SELECT DISTINCT id_pelicula FROM Pases WHERE CONCAT(fecha, ' ', hora ) >= :currentDate
+         AND CONCAT(fecha, ' ', hora ) <= DATE_ADD(DATE_ADD(:currentDate, INTERVAL 7 DAY), INTERVAL 12 HOUR)
+         ORDER BY id_sala;";
+        $params = [
+            'currentDate' => $currentDate
+        ];
+        return $instance->query($query, $params)->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public static function getUser($id)
