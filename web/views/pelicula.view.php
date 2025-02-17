@@ -68,7 +68,6 @@
             </div>
         </div>
     </div>
-    </div>
 </main>
 
 <?php require 'views/partials/footer.php'; ?>
