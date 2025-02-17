@@ -40,9 +40,9 @@
                         <?php
                         for ($i = 0; $i < sizeof($days); $i++) {
                             if ($i === 0) {
-                                echo "<button class='nav-link active' id='day" . ($i + 1) . "' data-bs-toggle='tab' data-bs-target='#day" . ($i + 1) . "-pane' type='button' role='tab' aria-controls='day" . ($i + 1) . "-pane' aria-selected='true'>{$days[$i]}</button>";
+                                echo "<button class='nav-link active' id='day" . ($i + 1) . "' data-bs-toggle='tab' data-bs-target='#day" . ($i + 1) . "-pane' type='button' role='tab' aria-controls='day" . ($i + 1) . "-pane' aria-selected='true'>" . reverseDate($days[$i]) . "</button>";
                             } else {
-                                echo "<button class='nav-link' id='day" . ($i + 1) . "' data-bs-toggle='tab' data-bs-target='#day" . ($i + 1) . "-pane' type='button' role='tab' aria-controls='day" . ($i + 1) . "-pane' aria-selected='false'>{$days[$i]}</button>";
+                                echo "<button class='nav-link' id='day" . ($i + 1) . "' data-bs-toggle='tab' data-bs-target='#day" . ($i + 1) . "-pane' type='button' role='tab' aria-controls='day" . ($i + 1) . "-pane' aria-selected='false'>" . reverseDate($days[$i]) . "</button>";
                             }
                         }
                         ?>
