@@ -6,7 +6,7 @@
         <h1><?= $title; ?></h1>
         <div class="row g-4 justify-content-center">
             <div class="col-5 col-md-2">
-                <img src='<?= BASE_PATH . "/views/images/posters/{$id}.webp"; ?>' alt="" class="img-fluid">
+                <img src='<?= BASE_PATH . "/views/images/posters/{$id}.webp"; ?>' alt="" id="poster" class="img-fluid">
             </div>
             <div class="col-7 col-md-2 order-md-2">
                 <div>
