@@ -8,6 +8,7 @@ export default function initMovie() {
         screeningId: parseInt(event.target.getAttribute("data-id")),
         movieTitle: document.querySelector("h1").innerText,
         poster: document.querySelector("#poster").src,
+        screen: parseInt(event.target.getAttribute("data-screen")),
         day: event.target.parentElement.getAttribute("data-day"),
         time: event.target.innerText,
         price: Number(event.target.getAttribute("data-price")),

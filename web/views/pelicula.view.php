@@ -57,7 +57,7 @@
                             }
                             foreach ($screenings as $screening) {
                                 if ($screening['fecha'] === $days[$i]) {
-                                    echo "<a href='" . BASE_PATH . "/cesta' type='button' class='btn btn-outline-primary btn-lg rounded-0 mx-2' data-id='{$screening['id']}' data-price='8'>{$screening['hora']}</a> ";
+                                    echo "<a href='" . BASE_PATH . "/cesta' type='button' class='btn btn-outline-primary btn-lg rounded-0 mx-2' data-id='{$screening['id']}' data-screen='{$screening['id_sala']}' data-price='8'>{$screening['hora']}</a> ";
                                 }
                             }
                             echo "</div>";

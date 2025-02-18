@@ -39,7 +39,5 @@ $days = array_unique($days);
 
 $days = array_values($days);
 
-
-
 $page = 'pelicula';
 require 'views/pelicula.view.php';
