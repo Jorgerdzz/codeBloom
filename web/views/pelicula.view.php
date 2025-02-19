@@ -34,30 +34,39 @@
                     <h4>Sinopsis</h4>
                     <p><?= $summary; ?></p>
                 </div>
-                <div class="row d-flex justify-content-center mb-3">
+                <div class="row mb-3">
                     <h4>Sesiones</h4>
                     <div class="nav nav-pills" id="days" role="tablist">
                         <?php
                         for ($i = 0; $i < sizeof($days); $i++) {
                             if ($i === 0) {
-                                echo "<button class='nav-link active' id='day" . ($i + 1) . "' data-bs-toggle='tab' data-bs-target='#day" . ($i + 1) . "-pane' type='button' role='tab' aria-controls='day" . ($i + 1) . "-pane' aria-selected='true'>" . reverseDate($days[$i]) . "</button>";
+                                echo "<button class='nav-link active' id='day" .
+                                    ($i + 1) . "' data-bs-toggle='tab' data-bs-target='#day" .
+                                    ($i + 1) . "-pane' type='button' role='tab' aria-controls='day" . ($i + 1) .
+                                    "-pane' aria-selected='true'>" . reverseDate($days[$i]) . "</button>";
                             } else {
-                                echo "<button class='nav-link' id='day" . ($i + 1) . "' data-bs-toggle='tab' data-bs-target='#day" . ($i + 1) . "-pane' type='button' role='tab' aria-controls='day" . ($i + 1) . "-pane' aria-selected='false'>" . reverseDate($days[$i]) . "</button>";
+                                echo "<button class='nav-link' id='day" . ($i + 1) .
+                                    "' data-bs-toggle='tab' data-bs-target='#day" .
+                                    ($i + 1) . "-pane' type='button' role='tab' aria-controls='day" .
+                                    ($i + 1) . "-pane' aria-selected='false'>" . reverseDate($days[$i]) . "</button>";
                             }
                         }
                         ?>
                     </div>
-                    <div class="tab-content mt-3 d-flex justify-content-center" id="screenings">
+                    <div class="tab-content mt-3 d-flex justify-content-around" id="screenings">
                         <?php
                         for ($i = 0; $i < sizeof($days); $i++) {
                             if ($i === 0) {
-                                echo "<div class='tab-pane fade show active' id='day" . ($i + 1) . "-pane' role='tabpanel' aria-labelledby='day" . ($i + 1) . "' tabindex='0' data-day='{$days[$i]}'>";
+                                echo "<div class='tab-pane fade show active' id='day" . ($i + 1) .
+                                    "-pane' role='tabpanel' aria-labelledby='day" . ($i + 1) . "' tabindex='0' data-day='{$days[$i]}'>";
                             } else {
-                                echo "<div class='tab-pane fade' id='day" . ($i + 1) . "-pane' role='tabpanel' aria-labelledby='day" . ($i + 1) . "' tabindex='0' data-day='{$days[$i]}'>";
+                                echo "<div class='tab-pane fade' id='day" . ($i + 1) .
+                                    "-pane' role='tabpanel' aria-labelledby='day" . ($i + 1) . "' tabindex='0' data-day='{$days[$i]}'>";
                             }
                             foreach ($screenings as $screening) {
                                 if ($screening['fecha'] === $days[$i]) {
-                                    echo "<a href='" . BASE_PATH . "/cesta' type='button' class='btn btn-outline-primary btn-lg rounded-0 mx-2' data-id='{$screening['id']}' data-screen='{$screening['id_sala']}' data-price='8'>{$screening['hora']}</a> ";
+                                    echo "<a href='" . BASE_PATH .
+                                        "/cesta' type='button' class='btn btn-outline-primary btn-lg rounded-0 mx-1' data-id='{$screening['id']}' data-screen='{$screening['id_sala']}' data-price='8'>{$screening['hora']}</a> ";
                                 }
                             }
                             echo "</div>";
