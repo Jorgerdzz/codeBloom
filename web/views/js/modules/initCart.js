@@ -8,7 +8,7 @@ export default function initCart() {
   } else {
     for (const item of cart) {
       cartBody.innerHTML += `
-          <div class="card mb-3" style="max-width: 450px;">
+          <div class="card mb-3" id="${item["screeningId"]}" style="max-width: 450px;">
             <div class="row g-0">
                 <div class="col-4">
                     <img src="${item["poster"]}" class="img-fluid rounded-start" alt="...">
@@ -21,12 +21,26 @@ export default function initCart() {
                             <p class="card-text">Precio: ${item["price"]} €</p>
                             <label for="quantity">Cantidad:</label>
                             <input type="number" value="${item["quantity"]}" style="max-width: 3rem;" id="quantity">
-                            <i class="bi bi-trash3-fill ms-2"></i> 
+                            <i data-icon-id="${item["screeningId"]}" class="bi bi-trash3-fill ms-2" style="cursor: pointer;"></i> 
                     </div>
                 </div>
             </div>
-        </div>          
+          </div>
       `;
     }
+  }
+
+  const trashIcons = document.querySelectorAll(".bi-trash3-fill");
+  for (const trashIcon of trashIcons) {
+    trashIcon.addEventListener("click", (event) => {
+      const id = parseInt(event.target.getAttribute("data-icon-id"));
+      const ticket = document.getElementById(`${id}`);
+      ticket.remove();
+
+      let cart = JSON.parse(localStorage.getItem("cart"));
+      cart = cart.filter((ticket) => ticket.screeningId !== id);
+
+      localStorage.setItem("cart", JSON.stringify(cart));
+    });
   }
 }
