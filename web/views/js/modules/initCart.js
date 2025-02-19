@@ -14,14 +14,14 @@ export default function initCart() {
                     <img src="${item["poster"]}" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-8 align-content-center">
-                    <div class="card-body">
+                    <div class="card-body" data-id="${item["screeningId"]}">
                             <h5 class="card-title">${item["movieTitle"]}</h5>
                             <p class="card-text">${item["day"]} | ${item["time"]}</p>
                             <p class="card-text">Sala ${item["screen"]}</p>
                             <p class="card-text">Precio: ${item["price"]} €</p>
-                            <label for="quantity">Cantidad:</label>
-                            <input type="number" value="${item["quantity"]}" style="max-width: 3rem;" id="quantity">
-                            <i data-icon-id="${item["screeningId"]}" class="bi bi-trash3-fill ms-2" style="cursor: pointer;"></i> 
+                            <label>Cantidad:</label>
+                            <input min="1" max="10" type="number" value="${item["quantity"]}" style="max-width: 3rem;" class="quantity">
+                            <i class="bi bi-trash3-fill ms-2" style="cursor: pointer;"></i> 
                     </div>
                 </div>
             </div>
@@ -32,13 +32,30 @@ export default function initCart() {
 
   const trashIcons = document.querySelectorAll(".bi-trash3-fill");
   for (const trashIcon of trashIcons) {
-    trashIcon.addEventListener("click", (event) => {
-      const id = parseInt(event.target.getAttribute("data-icon-id"));
+    trashIcon.addEventListener("click", () => {
+      const id = parseInt(trashIcon.parentElement.getAttribute("data-id"));
       const ticket = document.getElementById(`${id}`);
       ticket.remove();
 
       let cart = JSON.parse(localStorage.getItem("cart"));
       cart = cart.filter((ticket) => ticket.screeningId !== id);
+
+      localStorage.setItem("cart", JSON.stringify(cart));
+    });
+  }
+
+  const quantityInputs = document.querySelectorAll(".quantity");
+  for (const quantityInput of quantityInputs) {
+    quantityInput.addEventListener("input", () => {
+      const id = parseInt(quantityInput.parentElement.getAttribute("data-id"));
+      let quantity = parseInt(quantityInput.value);
+      let cart = JSON.parse(localStorage.getItem("cart"));
+
+      for (const item of cart) {
+        if (item["screeningId"] === id) {
+          item["quantity"] = quantity;
+        }
+      }
 
       localStorage.setItem("cart", JSON.stringify(cart));
     });
