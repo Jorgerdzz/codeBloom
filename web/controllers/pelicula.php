@@ -9,8 +9,6 @@ if (!isset($_GET['id'])) {
 
 $id = $_GET['id'];
 
-
-
 $movie = Database::getMovie($id);
 
 if (!$movie) {
