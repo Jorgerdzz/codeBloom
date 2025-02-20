@@ -2,9 +2,7 @@ export function initCart() {
   const cart = JSON.parse(localStorage.getItem("cart"));
   const cartBody = document.getElementById("cart-body");
   if (cart === null || cart.length === 0) {
-    const h3 = document.createElement("h3");
-    h3.innerText = "La cesta está vacía";
-    cartBody.appendChild(h3);
+    cartBody.innerHTML = "<h3>La cesta está vacía</h3>";
   } else {
     for (const item of cart) {
       cartBody.innerHTML += `
@@ -20,16 +18,24 @@ export function initCart() {
                             <p class="card-text">Sala ${item["screen"]}</p>
                             <p class="card-text">Precio: ${item["price"]} €</p>
                             <label>Cantidad:</label>
-                            <input min="1" max="10" type="number" value="${item["quantity"]}" style="max-width: 3rem;" class="quantity">
+                            <input min="1" max="10" onkeydown="return false" type="number" value="${item["quantity"]}" style="max-width: 3rem;" class="quantity">
                             <i class="bi bi-trash3-fill ms-2" style="cursor: pointer;"></i> 
                     </div>
                 </div>
             </div>
           </div>
-          <h3 id="total-price" class="text-center">Total: </h3>
-          <button id="buy-button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#thanks-modal">Finalizar compra</button>
       `;
     }
+    cartBody.innerHTML += `
+    <h3 id="total-price" class="text-center">Total: </h3>    
+    <button
+    id="buy-button"
+    class="btn btn-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#thanks-modal">
+    Finalizar compra
+    </button>
+    `;
     updatePrice();
   }
 
@@ -43,7 +49,12 @@ export function initCart() {
       let cart = JSON.parse(localStorage.getItem("cart"));
       cart = cart.filter((ticket) => ticket.screeningId !== id);
 
+      if (cart.length === 0) {
+        cartBody.innerHTML = "<h3>La cesta está vacía</h3>";
+      }
+
       localStorage.setItem("cart", JSON.stringify(cart));
+
       updatePrice();
     });
   }
