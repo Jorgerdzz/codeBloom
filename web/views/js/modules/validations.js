@@ -14,3 +14,7 @@ export function isValidEmail(email) {
 export function isValidPassword(password) {
   return password.length >= 8;
 }
+
+export function isValidMessage(message) {
+  return message.length > 5;
+}

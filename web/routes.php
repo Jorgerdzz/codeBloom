@@ -10,5 +10,6 @@ return [
     '/mi-cuenta/cerrar-sesion' => 'controllers/Session/cerrar-sesion.php',
     '/crear-cuenta' => 'controllers/Registration/crear-cuenta.php',
     '/bienvenida' => 'controllers/Registration/bienvenida.php',
-    '/cesta' => 'controllers/cesta.php'
+    '/cesta' => 'controllers/cesta.php',
+    '/sobre-nosotros' => 'controllers/sobre-nosotros.php'
 ];
