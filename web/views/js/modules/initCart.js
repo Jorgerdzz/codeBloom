@@ -27,14 +27,8 @@ export function initCart() {
       `;
     }
     cartBody.innerHTML += `
-    <h3 id="total-price" class="text-center">Total: </h3>    
-    <button
-    id="buy-button"
-    class="btn btn-primary"
-    data-bs-toggle="modal"
-    data-bs-target="#thanks-modal">
-    Finalizar compra
-    </button>
+    <h4 id="total-price" class="text-center">Total: </h4>    
+    <button id="buy-button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#thanks-modal">Finalizar compra</button>   
     `;
     updatePrice();
   }

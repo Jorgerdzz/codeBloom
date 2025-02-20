@@ -5,13 +5,13 @@ export default function initMovie() {
       event.preventDefault();
 
       const ticket = {
-        screeningId: parseInt(event.target.getAttribute("data-id")),
+        screeningId: parseInt(screening.getAttribute("data-id")),
         movieTitle: document.querySelector("h1").innerText,
         poster: document.querySelector("#poster").src,
-        screen: parseInt(event.target.getAttribute("data-screen")),
-        day: event.target.parentElement.getAttribute("data-day"),
-        time: event.target.innerText,
-        price: Number(event.target.getAttribute("data-price")),
+        screen: parseInt(screening.getAttribute("data-screen")),
+        day: screening.parentElement.getAttribute("data-day"),
+        time: screening.innerText,
+        price: Number(screening.getAttribute("data-price")),
         quantity: 1,
       };
 
@@ -20,8 +20,10 @@ export default function initMovie() {
 
       for (const item of cart) {
         if (ticket.screeningId === item.screeningId) {
-          item.quantity++;
           inCart = true;
+          if (item.quantity < 10) {
+            item.quantity++;            
+          }
           break;
         }
       }
