@@ -1,6 +1,7 @@
 export function initCart() {
   const cart = JSON.parse(localStorage.getItem("cart"));
   const cartBody = document.getElementById("cart-body");
+  const buyButton = document.getElementById("buy-button");
   if (cart === null || cart.length === 0) {
     cartBody.innerHTML = "<h4>La cesta está vacía</h4>";
   } else {
@@ -27,9 +28,9 @@ export function initCart() {
       `;
     }
     cartBody.innerHTML += `
-    <h4 id="total-price" class="text-center">Total: </h4>    
-    <button id="buy-button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#thanks-modal">Finalizar compra</button>   
+    <h4 id="total-price" class="text-center">Total: </h4>      
     `;
+    buyButton.style.display = "inline-block";
     updatePrice();
   }
 
@@ -48,7 +49,6 @@ export function initCart() {
       }
 
       localStorage.setItem("cart", JSON.stringify(cart));
-
       updatePrice();
     });
   }
@@ -86,5 +86,9 @@ export function updatePrice() {
   for (const item of cart) {
     totalPrice += item["price"] * item["quantity"];
   }
-  document.getElementById("total-price").innerText = `Total: ${totalPrice} €`;
+  if (document.getElementById("total-price") !== null) {
+    document.getElementById("total-price").innerText = `Total: ${totalPrice} €`;
+  } else {
+    document.getElementById("buy-button").style.display = "none";
+  }
 }

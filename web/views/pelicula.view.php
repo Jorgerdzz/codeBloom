@@ -53,14 +53,14 @@
                         }
                         ?>
                     </div>
-                    <div class="tab-content mt-3 d-flex justify-content-around" id="screenings">
+                    <div class="tab-content mt-3" id="screenings">
                         <?php
                         for ($i = 0; $i < sizeof($days); $i++) {
                             if ($i === 0) {
-                                echo "<div class='tab-pane fade show active' id='day" . ($i + 1) .
+                                echo "<div class='tab-pane fade show active text-center' id='day" . ($i + 1) .
                                     "-pane' role='tabpanel' aria-labelledby='day" . ($i + 1) . "' tabindex='0' data-day='{$days[$i]}'>";
                             } else {
-                                echo "<div class='tab-pane fade' id='day" . ($i + 1) .
+                                echo "<div class='tab-pane fade text-center' id='day" . ($i + 1) .
                                     "-pane' role='tabpanel' aria-labelledby='day" . ($i + 1) . "' tabindex='0' data-day='{$days[$i]}'>";
                             }
                             foreach ($screenings as $screening) {

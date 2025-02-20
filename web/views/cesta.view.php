@@ -3,8 +3,10 @@
 
 <main>
     <h1 class="text-center">Mi cesta</h1>
-    <div class="container">
+    <div class="container text-center">
         <div id="cart-body" class="d-flex flex-column align-items-center"></div>
+        <button id="buy-button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#thanks-modal" style="display: none">Finalizar compra</button>
+
     </div>
     <div class="modal" id="thanks-modal" tabindex="-1">
         <div class="modal-dialog">
