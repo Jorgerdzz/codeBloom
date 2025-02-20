@@ -68,7 +68,7 @@ export function initCart() {
 
   document.getElementById("buy-button").addEventListener("click", () => {
     const cartBody = document.getElementById("cart-body");
-    cartBody.innerHTML = `¡Gracias por tu compra!`;
+    cartBody.innerHTML = ``;
     let cart = JSON.parse(localStorage.getItem("cart"));
     cart = [];
     localStorage.setItem("cart", JSON.stringify(cart));
