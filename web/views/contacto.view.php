@@ -12,19 +12,19 @@
                         <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp">
                     </div>
                     <div class="mb-3">
-                        <label for="lastname" class="form-label">Apellidos</label>
-                        <input type="text" class="form-control" id="lastname" name="lastname" aria-describedby="emailHelp">
+                        <label for="last-name" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="last-name" name="last-name" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Correo electrónico</label>
                         <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
-                        <label for="message" class="form-label">Mensaje</label>
+                        <label for="message" class="form-label">Tu mensaje</label>
                         <textarea class="form-control" id="message" name="message" rows="3"></textarea>
                     </div>
                     <div class="mb-3">
-                        <input id="privacy" type="checkbox" required>
+                        <input id="privacy" type="checkbox">
                         <label for="privacy" class="form-label">Acepto las políticas de privacidad</label>
                     </div>
                     <div class="d-grid">

@@ -18,9 +18,7 @@ export default function initSignUp() {
   const lastNameCheck = document.getElementById("last-name-check");
   const emailCheck = document.getElementById("email-check");
   const passwordCheck = document.getElementById("password-check");
-  const passwordConfirmCheck = document.getElementById(
-    "password-confirm-check"
-  );
+  const passwordConfirmCheck = document.getElementById("password-confirm-check");
 
   let validName = false;
   let validLastName = false;
@@ -86,18 +84,7 @@ export default function initSignUp() {
   });
 
   function validateSignUpForm() {
-    if (
-      validName &&
-      validLastName &&
-      validEmail &&
-      validPassword &&
-      validPasswordConfirm &&
-      acceptedPrivacy
-    ) {
-      signInButton.disabled = false;
-    } else {
-      signInButton.disabled = true;
-    }
+    signInButton.disabled = !(validName && validLastName && validEmail && validPassword && validPasswordConfirm && acceptedPrivacy)
   }
 
   function validatePasswordConfirm() {

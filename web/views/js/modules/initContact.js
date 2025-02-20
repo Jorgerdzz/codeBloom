@@ -35,7 +35,7 @@ export default function initContact() {
   });
 
   messageInput.addEventListener("input", () => {
-    validMessage = isValidMessage(messageInput.textContent);
+    validMessage = isValidMessage(messageInput.value);
     validateContactForm();
   });
 
@@ -45,16 +45,6 @@ export default function initContact() {
   });
 
   function validateContactForm() {
-    if (
-      validName &&
-      validLastName &&
-      validEmail &&
-      validMessage &&
-      acceptedPrivacy
-    ) {
-      sendButton.disabled = false;
-    } else {
-      sendButton.disabled = true;
-    }
+    sendButton.disabled = !(validName && validLastName && validEmail && validMessage && acceptedPrivacy);
   }
 }
