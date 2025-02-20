@@ -1,4 +1,4 @@
-export default function initCart() {
+export function initCart() {
   const cart = JSON.parse(localStorage.getItem("cart"));
   const cartBody = document.getElementById("cart-body");
   if (cart === null || cart.length === 0) {
@@ -26,8 +26,11 @@ export default function initCart() {
                 </div>
             </div>
           </div>
+          <h3 id="total-price" class="text-center">Total: </h3>
+          <button id="buy-button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#thanks-modal">Finalizar compra</button>
       `;
     }
+    updatePrice();
   }
 
   const trashIcons = document.querySelectorAll(".bi-trash3-fill");
@@ -41,6 +44,7 @@ export default function initCart() {
       cart = cart.filter((ticket) => ticket.screeningId !== id);
 
       localStorage.setItem("cart", JSON.stringify(cart));
+      updatePrice();
     });
   }
 
@@ -58,6 +62,24 @@ export default function initCart() {
       }
 
       localStorage.setItem("cart", JSON.stringify(cart));
+      updatePrice();
     });
   }
+
+  document.getElementById("buy-button").addEventListener("click", () => {
+    const cartBody = document.getElementById("cart-body");
+    cartBody.innerHTML = `¡Gracias por tu compra!`;
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    cart = [];
+    localStorage.setItem("cart", JSON.stringify(cart));
+  });
+}
+
+export function updatePrice() {
+  let cart = JSON.parse(localStorage.getItem("cart"));
+  let totalPrice = 0;
+  for (const item of cart) {
+    totalPrice += item["price"] * item["quantity"];
+  }
+  document.getElementById("total-price").innerText = `Total: ${totalPrice} €`;
 }
