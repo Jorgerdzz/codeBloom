@@ -4,8 +4,8 @@
 <main>
     <div class="container">
         <div class="row">
-            <h3 class="text-center"> ¡Te damos la bienvenida, <?= $name; ?>! <br>
-                Aquí comienza tu viaje por el pasado y el presente del cine </h3>
+            <h4 class="text-center"> ¡Te damos la bienvenida, <?= $name; ?>! <br>
+                Aquí comienza tu viaje por el pasado y el presente del cine </h4>
         </div>
 </main>
 

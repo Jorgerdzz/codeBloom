@@ -2,7 +2,7 @@ export function initCart() {
   const cart = JSON.parse(localStorage.getItem("cart"));
   const cartBody = document.getElementById("cart-body");
   if (cart === null || cart.length === 0) {
-    cartBody.innerHTML = "<h3>La cesta está vacía</h3>";
+    cartBody.innerHTML = "<h4>La cesta está vacía</h4>";
   } else {
     for (const item of cart) {
       cartBody.innerHTML += `
@@ -44,7 +44,7 @@ export function initCart() {
       cart = cart.filter((ticket) => ticket.screeningId !== id);
 
       if (cart.length === 0) {
-        cartBody.innerHTML = "<h3>La cesta está vacía</h3>";
+        cartBody.innerHTML = "<h4>La cesta está vacía</h4>";
       }
 
       localStorage.setItem("cart", JSON.stringify(cart));
