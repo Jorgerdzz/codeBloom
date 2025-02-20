@@ -40,7 +40,7 @@
                     <a href="<?= BASE_PATH . '/pelicula?id=4'; ?>">
                         <img src="<?= BASE_PATH . '/views/images/carousel/carousel4.webp'; ?>" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-block">
-                            <span class="h2 p-1">Doce hombres sin piedad</span>
+                            <span class="h2 p-1">12 hombres sin piedad</span>
                         </div>
                     </a>
                 </div>
@@ -74,7 +74,7 @@
         <div class="row g-3 cartelera justify-content-center">
             <?php foreach ($availableMovies as $movie): ?>
                 <div class='col-6 col-md-3'>
-                    <a href='<?= BASE_PATH ?>/pelicula?id=<?= $movie['id_pelicula'] ?>'>
+                    <a href='<?= BASE_PATH ?>/pelicula?id=<?= $movie['id_pelicula'] ?>&titulo=<?= urlencode($movie['titulo']) ?>'>
                         <img class='img-fluid' src='<?= BASE_PATH ?>/views/images/posters/<?= $movie['id_pelicula'] ?>.webp' alt=''>
                     </a>
                 </div>
