@@ -58,7 +58,7 @@
                         for ($i = 0; $i < sizeof($days); $i++) {
                             if ($i === 0) {
                                 echo "<div class='tab-pane fade show active text-center' id='day" . ($i + 1) .
-                                    "-pane' role='tabpanel' aria-labelledby='day" . ($i + 1) . "' tabindex='0' data-day='{$days[$i]}'>";
+                                    "-pane' role='tabpanel' aria-labelledby='day" . ($i + 1) . "' tabindex='0' data-day='" . reverseDate($days[$i]) . "'>";
                             } else {
                                 echo "<div class='tab-pane fade text-center' id='day" . ($i + 1) .
                                     "-pane' role='tabpanel' aria-labelledby='day" . ($i + 1) . "' tabindex='0' data-day='{$days[$i]}'>";
@@ -66,7 +66,7 @@
                             foreach ($screenings as $screening) {
                                 if ($screening['fecha'] === $days[$i]) {
                                     echo "<a href='" . BASE_PATH .
-                                        "/cesta' type='button' class='btn btn-outline-primary btn-lg rounded-0 mx-1' data-id='{$screening['id']}' data-screen='{$screening['id_sala']}' data-price='8'>{$screening['hora']}</a> ";
+                                        "/cesta' type='button' class='btn btn-outline-primary btn-lg rounded-0 mx-1' data-id='{$screening['id']}' data-screen='{$screening['id_sala']}' data-price='8'>" . formatTime($screening['hora']) . "</a> ";
                                 }
                             }
                             echo "</div>";
