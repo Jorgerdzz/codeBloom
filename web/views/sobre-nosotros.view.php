@@ -4,7 +4,7 @@
 <main>
     <div class="container">
         <h1 class="text-center">Sobre nosotros</h1>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center alignt-items-end g-5 ">
             <div class="col-md-5">
                 <p>
                     En Cine Eternum, celebramos el cine en todas sus formas.
@@ -34,7 +34,7 @@
 
                 </p>
             </div>
-            <div class="col-md-4 d-none d-md-block">
+            <div class="col-md-4 d-none d-md-block ">
                 <img src="<?= BASE_PATH . '/views/images/about.jpg'; ?>" alt="Sobre nosotros" class="img-fluid">
             </div>
         </div>
