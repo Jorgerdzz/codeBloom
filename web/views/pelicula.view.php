@@ -6,7 +6,7 @@
         <h1><?= $title; ?></h1>
         <div class="row g-4 justify-content-center">
             <div class="col-5 col-md-2">
-                <img src='<?= BASE_PATH . "/views/images/posters/{$id}.webp"; ?>' alt="" class="img-fluid">
+                <img src='<?= BASE_PATH . "/views/images/posters/{$id}.webp"; ?>' alt="" id="poster" class="img-fluid">
             </div>
             <div class="col-7 col-md-2 order-md-2">
                 <div>
@@ -34,62 +34,44 @@
                     <h4>Sinopsis</h4>
                     <p><?= $summary; ?></p>
                 </div>
-                <div class="row d-flex justify-content-center mb-3">
+                <div class="row mb-3">
                     <h4>Sesiones</h4>
-                    <div>
-                        <div class="nav nav-pills justify-content-between" id="myTab" role="tablist">
-                            <button class="nav-link active" id="day1" data-bs-toggle="tab" data-bs-target="#day1-pane" type="button" role="tab" aria-controls="day1-pane" aria-selected="true">20/01/2025</button>
-                            <button class="nav-link" id="day2" data-bs-toggle="tab" data-bs-target="#day2-pane" type="button" role="tab" aria-controls="day2-pane" aria-selected="false">21/01/2025</button>
-                            <button class="nav-link" id="day3" data-bs-toggle="tab" data-bs-target="#day3-pane" type="button" role="tab" aria-controls="day3-pane" aria-selected="false">22/01/2025</button>
-                            <button class="nav-link" id="day4" data-bs-toggle="tab" data-bs-target="#day4-pane" type="button" role="tab" aria-controls="day4-pane" aria-selected="false">23/01/2025</button>
-                            <button class="nav-link" id="day5" data-bs-toggle="tab" data-bs-target="#day5-pane" type="button" role="tab" aria-controls="day5-pane" aria-selected="false">24/01/2025</button>
-                            <button class="nav-link" id="day6" data-bs-toggle="tab" data-bs-target="#day6-pane" type="button" role="tab" aria-controls="day6-pane" aria-selected="false">25/01/2025</button>
-                            <button class="nav-link" id="day7" data-bs-toggle="tab" data-bs-target="#day7-pane" type="button" role="tab" aria-controls="day7-pane" aria-selected="false">26/01/2025</button>
-                        </div>
-                        <div class="tab-content mt-3 d-flex justify-content-center" id="myTabContent">
-                            <div class="tab-pane fade show active" id="day1-pane" role="tabpanel" aria-labelledby="day1" tabindex="0">
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">16:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">18:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">20:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">22:00</button>
-                            </div>
-                            <div class="tab-pane fade" id="day2-pane" role="tabpanel" aria-labelledby="day2" tabindex="0">
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">16:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">18:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">20:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">22:00</button>
-                            </div>
-                            <div class="tab-pane fade" id="day3-pane" role="tabpanel" aria-labelledby="day3" tabindex="0">
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">16:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">18:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">20:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">22:00</button>
-                            </div>
-                            <div class="tab-pane fade" id="day4-pane" role="tabpanel" aria-labelledby="day4" tabindex="0">
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">16:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">18:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">20:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">22:00</button>
-                            </div>
-                            <div class="tab-pane fade" id="day5-pane" role="tabpanel" aria-labelledby="day5" tabindex="0">
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">16:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">18:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">20:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">22:00</button>
-                            </div>
-                            <div class="tab-pane fade" id="day6-pane" role="tabpanel" aria-labelledby="day6" tabindex="0">
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">16:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">18:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">20:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">22:00</button>
-                            </div>
-                            <div class="tab-pane fade" id="day7-pane" role="tabpanel" aria-labelledby="day7" tabindex="0">
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">16:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">18:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">20:00</button>
-                                <button type="button" class="btn btn-outline-primary btn-lg rounded-0 mx-2">22:00</button>
-                            </div>
-                        </div>
+                    <div class="nav nav-pills" id="days" role="tablist">
+                        <?php
+                        for ($i = 0; $i < sizeof($days); $i++) {
+                            if ($i === 0) {
+                                echo "<button class='nav-link active' id='day" .
+                                    ($i + 1) . "' data-bs-toggle='tab' data-bs-target='#day" .
+                                    ($i + 1) . "-pane' type='button' role='tab' aria-controls='day" . ($i + 1) .
+                                    "-pane' aria-selected='true'>" . reverseDate($days[$i]) . "</button>";
+                            } else {
+                                echo "<button class='nav-link' id='day" . ($i + 1) .
+                                    "' data-bs-toggle='tab' data-bs-target='#day" .
+                                    ($i + 1) . "-pane' type='button' role='tab' aria-controls='day" .
+                                    ($i + 1) . "-pane' aria-selected='false'>" . reverseDate($days[$i]) . "</button>";
+                            }
+                        }
+                        ?>
+                    </div>
+                    <div class="tab-content mt-3" id="screenings">
+                        <?php
+                        for ($i = 0; $i < sizeof($days); $i++) {
+                            if ($i === 0) {
+                                echo "<div class='tab-pane fade show active text-center' id='day" . ($i + 1) .
+                                    "-pane' role='tabpanel' aria-labelledby='day" . ($i + 1) . "' tabindex='0' data-day='{$days[$i]}'>";
+                            } else {
+                                echo "<div class='tab-pane fade text-center' id='day" . ($i + 1) .
+                                    "-pane' role='tabpanel' aria-labelledby='day" . ($i + 1) . "' tabindex='0' data-day='{$days[$i]}'>";
+                            }
+                            foreach ($screenings as $screening) {
+                                if ($screening['fecha'] === $days[$i]) {
+                                    echo "<a href='" . BASE_PATH .
+                                        "/cesta' type='button' class='btn btn-outline-primary btn-lg rounded-0 mx-1' data-id='{$screening['id']}' data-screen='{$screening['id_sala']}' data-price='8'>{$screening['hora']}</a> ";
+                                }
+                            }
+                            echo "</div>";
+                        }
+                        ?>
                     </div>
                 </div>
             </div>

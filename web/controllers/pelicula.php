@@ -29,5 +29,13 @@ $summary = $movie['sinopsis'];
 $releaseDate = formatDate($releaseDate);
 $ageRating = formatAgeRating($ageRating);
 
+$screenings = Database::getAvailableScreenings($id);
+
+$days = array_column($screenings, 'fecha');
+
+$days = array_unique($days);
+
+$days = array_values($days);
+
 $page = 'pelicula';
 require 'views/pelicula.view.php';

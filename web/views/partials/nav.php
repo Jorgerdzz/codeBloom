@@ -8,17 +8,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="<?= BASE_PATH; ?>#cartelera">Cartelera</a>
-                    <a class="nav-link" href="<?= BASE_PATH . '/contacto'; ?>">Contacto</a>
-                    <a class="nav-link" href="<?= BASE_PATH . '/sobre-nosotros'; ?>">Sobre nosotros</a>
                     <?php
                     if (!isset($_SESSION['currentUser'])) {
-                        echo '<a class="nav-link" href="' . BASE_PATH .  '/iniciar-sesion">Iniciar sesión</a>';
+                        echo '<a class="nav-link order-md-4" href="' . BASE_PATH .  '/iniciar-sesion"><i class="bi bi-person-circle"></i>&nbspIniciar sesión</a>';
                     } else {
-                        echo '<a class="nav-link" href="' . BASE_PATH .  '/mi-cuenta">' .
-                            '<i class="bi bi-person-circle"></i>' . " {$_SESSION['currentUser']['name']}</a>";
+                        echo '<a class="nav-link order-md-4" href="' . BASE_PATH .  '/mi-cuenta">' .
+                            '<i class="bi bi-person-circle"></i>' . " "
+                            . htmlspecialchars($_SESSION['currentUser']['name'], ENT_QUOTES) . '</a>';
                     }
                     ?>
+                    <a class="nav-link order-md-5" href="<?= BASE_PATH . '/cesta'; ?>"><i class="bi bi-bag"></i>&nbsp;Cesta</a>
+                    <a class="nav-link order-md-1" href="<?= BASE_PATH; ?>#cartelera">Cartelera</a>
+                    <a class="nav-link order-md-2" href="<?= BASE_PATH . '/contacto'; ?>">Contacto</a>
+                    <a class="nav-link order-md-3" href="<?= BASE_PATH . '/sobre-nosotros'; ?>">Sobre nosotros</a>
                 </div>
             </div>
         </div>

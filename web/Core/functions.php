@@ -63,3 +63,8 @@ function formatAgeRating($ageRating)
         return "No recomendada para menores de {$ageRating} años";
     }
 }
+
+function reverseDate($date)
+{
+    return DateTime::createFromFormat('Y-m-d', $date)->format('d-m-Y');
+}

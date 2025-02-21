@@ -33,6 +33,10 @@
             <i class="bi bi-check-lg d-none" id="password-confirm-check"></i>
             <input type="password" class="form-control" id="password-confirm">
           </div>
+          <div class="mb-3">
+            <input id="privacy" type="checkbox">
+            <label for="privacy" class="form-label">Acepto la <a href="<?= BASE_PATH . '/politica-privacidad'; ?>" class="link">política de privacidad</a></label>
+          </div>
           <div class="d-grid">
             <button class="btn btn-primary" id="signin" type="submit" disabled>Registrarse</button>
           </div>
