@@ -27,6 +27,7 @@
                         <label for="new-password" class="form-label">Nueva contraseña (opcional)</label>
                         <i class="bi bi-check-lg d-none" id="new-password-check"></i>
                         <input type="password" class="form-control" id="new-password" name="new-password" placeholder="Al menos ocho caracteres">
+                        <div id="password-strength" style="height: 5px; width: 0%; background-color: red;" class="rounded mt-1"></div>
                     </div>
                     <div class="mb-3">
                         <label for="new-password-confirm" class="form-label">Confirma la nueva contraseña</label>

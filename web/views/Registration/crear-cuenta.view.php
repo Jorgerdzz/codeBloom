@@ -27,6 +27,7 @@
             <label for="password" class="form-label">Contraseña</label>
             <i class="bi bi-check-lg d-none" id="password-check"></i>
             <input type="password" class="form-control" id="password" name="password" placeholder="Al menos ocho caracteres">
+            <div id="password-strength" style="height: 5px; width: 0%; background-color: red;" class="rounded mt-1"></div>
           </div>
           <div class="mb-3">
             <label for="password-confirm" class="form-label">Confirma la contraseña</label>
