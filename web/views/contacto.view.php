@@ -38,10 +38,10 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">¡Compra realizada con éxito!</h5>
+                    <h5 class="modal-title">¡Mensaje enviado!</h5>
                 </div>
                 <div class="modal-body text-center">
-                    <p>Esperamos que disfrutes esta experiencia en Cine Eternum</p>
+                    <p>Gracias por ponerte en contacto con nosotros.</p>
                 </div>
                 <div class="modal-footer">
                     <a class="btn btn-primary" href="<?= BASE_PATH . '/' ?>">Volver</a>

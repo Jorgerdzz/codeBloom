@@ -68,3 +68,8 @@ function reverseDate($date)
 {
     return DateTime::createFromFormat('Y-m-d', $date)->format('d-m-Y');
 }
+
+function formatTime($time)
+{
+    return date("H:i", strtotime($time));
+}
