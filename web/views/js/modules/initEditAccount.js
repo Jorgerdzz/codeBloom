@@ -5,6 +5,7 @@ export default function initEditAccount() {
     const lastNameInput = document.getElementById("last-name");
     const emailInput = document.getElementById("email");
     const newPasswordInput = document.getElementById("new-password");
+    const passwordStrength = document.getElementById("password-strength");
     const newPasswordConfirmInput = document.getElementById("new-password-confirm");
     const passwordInput = document.getElementById("password");
     const updateButton = document.getElementById("update");
@@ -70,6 +71,22 @@ export default function initEditAccount() {
         }
         validateEditForm();
     });
+
+    newPasswordInput.addEventListener("input" , () =>{
+        let strength = 0;
+        if (newPasswordInput.value.length > 8) strength++;
+        if (/[A-Z]/.test(newPasswordInput.value)) strength++;
+        if (/[0-9]/.test(newPasswordInput.value)) strength++;
+        if (/[@$!%*?&]/.test(newPasswordInput.value)) strength++;
+    
+        const colors = ["red", "orange", "yellow", "green"];
+        passwordStrength.style.backgroundColor = colors[strength];
+        passwordStrength.style.width = `${strength * 25}%`;
+    
+        if (strength === 0) passwordStrength.style.width = '10%';    
+        if (newPasswordInput.value.length === 0)  passwordStrength.style.width = '0%'; 
+        
+      });
 
     newPasswordConfirmInput.addEventListener("input", () => {
         validateNewPasswordConfirm();

@@ -10,6 +10,7 @@ export default function initSignUp() {
   const lastNameInput = document.getElementById("last-name");
   const emailInput = document.getElementById("email");
   const passwordInput = document.getElementById("password");
+  const passwordStrength = document.getElementById("password-strength");
   const passwordConfirmInput = document.getElementById("password-confirm");
   const signInButton = document.getElementById("signin");
   const privacyCheckbox = document.getElementById("privacy");
@@ -71,6 +72,22 @@ export default function initSignUp() {
       validatePasswordConfirm();
     }
     validateSignUpForm();
+  });
+
+  passwordInput.addEventListener("input" , () =>{
+    let strength = 0;
+    if (passwordInput.value.length > 8) strength++;
+    if (/[A-Z]/.test(passwordInput.value)) strength++;
+    if (/[0-9]/.test(passwordInput.value)) strength++;
+    if (/[@$!%*?&]/.test(passwordInput.value)) strength++;
+
+    const colors = ["red", "orange", "yellow", "green"];
+    passwordStrength.style.backgroundColor = colors[strength];
+    passwordStrength.style.width = `${strength * 25}%`;
+
+    if (strength === 0) passwordStrength.style.width = '10%';    
+    if (passwordInput.value.length === 0)  passwordStrength.style.width = '0%'; 
+    
   });
 
   passwordConfirmInput.addEventListener("input", () => {
