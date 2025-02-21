@@ -47,4 +47,8 @@ export default function initContact() {
   function validateContactForm() {
     sendButton.disabled = !(validName && validLastName && validEmail && validMessage && acceptedPrivacy);
   }
+
+  sendButton.addEventListener('click', (event) => {
+    event.preventDefault();
+  })
 }

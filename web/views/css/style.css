@@ -69,6 +69,15 @@ h5 {
   color: black !important;
 }
 
+.link {
+  color: var(--custom-color);
+  text-decoration: none !important;
+}
+
+.link:hover {
+  text-decoration: underline !important;
+}
+
 .carousel-caption {
   span {
     font-family: "Bebas Neue", sans-serif;

@@ -11,5 +11,6 @@ return [
     '/crear-cuenta' => 'controllers/Registration/crear-cuenta.php',
     '/bienvenida' => 'controllers/Registration/bienvenida.php',
     '/cesta' => 'controllers/cesta.php',
-    '/sobre-nosotros' => 'controllers/sobre-nosotros.php'
+    '/sobre-nosotros' => 'controllers/sobre-nosotros.php',
+    '/politica-privacidad' => 'controllers/politica-privacidad.php'
 ];

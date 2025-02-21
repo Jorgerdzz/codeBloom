@@ -25,12 +25,27 @@
                     </div>
                     <div class="mb-3">
                         <input id="privacy" type="checkbox">
-                        <label for="privacy" class="form-label">Acepto la política de privacidad</label>
+                        <label for="privacy" class="form-label">Acepto la <a href="<?= BASE_PATH . '/politica-privacidad'; ?>" class="link">política de privacidad</a></label>
                     </div>
                     <div class="d-grid">
-                        <input type="submit" class="btn btn-primary" id="send" disabled>
+                        <button class="btn btn-primary" id="send" disabled data-bs-toggle="modal" data-bs-target="#contact-modal">Enviar</button>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="contact-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">¡Compra realizada con éxito!</h5>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Esperamos que disfrutes esta experiencia en Cine Eternum</p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="<?= BASE_PATH . '/' ?>">Volver</a>
+                </div>
             </div>
         </div>
     </div>

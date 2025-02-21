@@ -35,7 +35,7 @@
           </div>
           <div class="mb-3">
             <input id="privacy" type="checkbox">
-            <label for="privacy" class="form-label">Acepto la política de privacidad</label>
+            <label for="privacy" class="form-label">Acepto la <a href="<?= BASE_PATH . '/politica-privacidad'; ?>" class="link">política de privacidad</a></label>
           </div>
           <div class="d-grid">
             <button class="btn btn-primary" id="signin" type="submit" disabled>Registrarse</button>
