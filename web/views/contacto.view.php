@@ -9,15 +9,18 @@
                 <form method="POST">
                     <div class="mb-3">
                         <label for="name" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp">
+                        <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp"
+                            value="<?= $name ?? '' ?>">
                     </div>
                     <div class="mb-3">
                         <label for="last-name" class="form-label">Apellido</label>
-                        <input type="text" class="form-control" id="last-name" name="last-name" aria-describedby="lastNameHelp">
+                        <input type="text" class="form-control" id="last-name" name="last-name" aria-describedby="lastNameHelp"
+                            value="<?= $lastName ?? '' ?>">
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                            value="<?= $email ?? '' ?>">
                     </div>
                     <div class="mb-3">
                         <label for="message" class="form-label">Tu mensaje</label>
@@ -25,7 +28,7 @@
                     </div>
                     <div class="mb-3">
                         <input id="privacy" type="checkbox">
-                        <label for="privacy" class="form-label">Acepto la <a href="<?= BASE_PATH . '/politica-privacidad'; ?>" class="link">política de privacidad</a></label>
+                        <label for="privacy" class="form-label">Acepto la <a href="<?= BASE_PATH . '/politica-privacidad'; ?>" class="link">política de privacidad</a>.</label>
                     </div>
                     <div class="d-grid">
                         <button class="btn btn-primary" id="send" disabled data-bs-toggle="modal" data-bs-target="#contact-modal">Enviar</button>

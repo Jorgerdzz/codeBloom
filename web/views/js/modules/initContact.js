@@ -13,9 +13,9 @@ export default function initContact() {
   const privacyCheckbox = document.getElementById("privacy");
   const sendButton = document.getElementById("send");
 
-  let validName = false;
-  let validLastName = false;
-  let validEmail = false;
+  let validName = nameInput.value.length > 1;
+  let validLastName = lastNameInput.value.length > 1;
+  let validEmail = emailInput.value.length > 1;
   let validMessage = false;
   let acceptedPrivacy = false;
 
