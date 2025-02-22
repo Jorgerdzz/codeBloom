@@ -13,7 +13,6 @@
                     más esperados.
                 </p>
                 <p>
-
                     Nuestra cartelera está cuidadosamente seleccionada para ofrecer una experiencia única:
                     desde los últimos éxitos de taquilla hasta las películas que marcaron la historia del cine.
                 </p>
@@ -34,17 +33,11 @@
 
                 </p>
             </div>
-            <div class="col-md-4 d-none d-md-block ">
-                <img src="<?= BASE_PATH . '/views/images/about.jpg'; ?>" alt="Sobre nosotros" class="img-fluid">
+            <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center">
+                <img src="<?= BASE_PATH . '/views/images/about.jpg'; ?>" alt="Sobre nosotros" class="img-fluid w-75">
             </div>
         </div>
     </div>
 </main>
-
-
-
-
-
-
 
 <?php require 'views/partials/footer.php'; ?>
