@@ -1,9 +1,9 @@
 export function isValidName(name) {
-  return name.length > 1;
+  return name.length > 1 && !/[0-9]/.test(name);
 }
 
 export function isValidLastName(lastName) {
-  return lastName.length > 1;
+  return lastName.length > 1 && !/[0-9]/.test(lastName);;
 }
 
 export function isValidEmail(email) {
