@@ -4,7 +4,7 @@
 <main>
     <div class="container">
         <h1 class="text-center">Sobre nosotros</h1>
-        <div class="row justify-content-center alignt-items-end g-5 ">
+        <div class="row justify-content-center align-items-center g-5">
             <div class="col-md-5">
                 <p>
                     En Cine Eternum, celebramos el cine en todas sus formas.
@@ -29,8 +29,6 @@
                 </p>
                 <p>
                     ¡Tu próxima gran historia comienza aquí!
-                </p>
-
                 </p>
             </div>
             <div class="col-md-4 d-none d-md-flex justify-content-center align-items-center">
