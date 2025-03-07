@@ -1,5 +1,9 @@
 <?php
-define('DOMAIN', 'http://localhost:8000');
+
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
+$host = $_SERVER['HTTP_HOST'];
+
+define('DOMAIN', $protocol . $host);
 define('SUBDIRECTORY', '');
 define('BASE_PATH', DOMAIN . SUBDIRECTORY);
 
