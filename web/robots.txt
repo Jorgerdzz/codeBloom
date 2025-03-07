@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /mi-cuenta
 Disallow: /bienvenida
+Disallow: /cesta
